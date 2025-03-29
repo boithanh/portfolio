@@ -1,13 +1,18 @@
 import React from 'react'
+import { PageProps } from '../../../.next/types/app/page';
 
-interface Props {
-    params: { slug: string };
+export async function generateStaticParams() {
+    const posts = await fetch("https://.../posts").then((res) => res.json());
+
+    return posts.map((post: any) => ({
+        slug: post.slug,
+    }));
 }
 
-const Page = ({ params }: { params: { slug: string } }) => {
-    const { slug } = params;
+const Page = async ({ params }: PageProps) => {
+    const { slug } = await params;
+    console.log(slug);
     return <div>Danh mục sản phẩm: {slug}</div>;
-
 };
 
 export default Page
