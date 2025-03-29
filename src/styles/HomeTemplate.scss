@@ -1,0 +1,347 @@
+$color_1: #fff;
+$color_2: #1a1d2d;
+$color_3: green;
+$color_4: white;
+$color_5: #585858;
+$color_6: #35a22c;
+$color_7: #A8A8A8;
+$background-color_1: #0ea8cf;
+$background-color_2: red;
+$background-color_3: rgba(7, 10, 12, 0.72);
+$background-color_4: black;
+$background-color_5: #fff;
+$background-color_6: green;
+$border-color_1: green;
+$border-color_2: white;
+$border-color_3: #35a22c;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+.title {
+    h3 {
+        font-size: 20px;
+        color: $color_1;
+        line-height: 30px;
+        padding-top: 25px;
+        font-weight: 800;
+    }
+
+    h2 {
+        font-size: 36px;
+        line-height: 42px;
+        color: $color_2;
+        font-weight: bolder;
+    }
+
+    p {
+        padding-top: 15px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+header {
+    #home {
+        color: $color_3 !important;
+    }
+
+    .collapse {
+        .nav-link {
+            &:hover {
+                &::before {
+                    width: 100%;
+                }
+
+                color: $color_3 !important;
+            }
+        }
+    }
+
+    .navbar {
+        i {
+            font-size: 45px;
+        }
+    }
+
+    .navbar-brand {
+        font-size: 36px;
+        padding-left: 10px;
+    }
+
+    .navbar-toggler {
+        background: green;
+
+        &:hover {
+            background-color: $background-color_1;
+        }
+    }
+}
+
+.cyber_carousel {
+    .carousel-item {
+        .carousel_content {
+            img {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+            }
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+
+            h1 {
+                font-size: 56px;
+                color: $color_4;
+                line-height: 65px;
+            }
+
+            p {
+                font-size: 24px;
+                color: $color_4;
+                line-height: 36px;
+            }
+        }
+
+        img {
+            height: 100vh;
+        }
+
+        .overlay {
+            background: rgba(39, 43, 54, .5);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+.cyber_project {
+    .project_item {
+        img {
+            width: 100%;
+            border-radius: 12px 12px 0 0;
+        }
+
+        box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+        rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+        border-radius: 12px;
+
+        .project_item_text {
+            text-align: center;
+            padding: 20px 15px 30px 15px;
+            border: 1px solid transparent;
+            border-radius: 0 0 12px 12px;
+            border-top: none;
+            transition: all 0.5s;
+        }
+
+        &:hover {
+            .project_item_text {
+                border-color: $border-color_1;
+
+                h5 {
+                    color: $color_3;
+                }
+            }
+        }
+
+        p {
+            color: $color_5;
+        }
+    }
+
+    .title {
+        color: $color_5;
+    }
+
+    .cyber_project_title {
+        width: 70%;
+        text-align: center;
+    }
+}
+
+.back_to_top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: $background-color_2;
+    color: $color_4;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.cd-top--fade-out {
+    opacity: .5;
+}
+
+.cyber_available {
+    color: $color_4;
+    background-image: url(./../../public/images/3.jpg);
+    padding: 100px 0 120px;
+    position: relative;
+    text-align: center;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $background-color_3;
+    }
+
+    .cyber_avai_title {
+        h2 {
+            color: $color_4;
+        }
+    }
+
+    .cyber_avai_item {
+        padding: 40px 40px;
+        transition: .3s;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, .1);
+        border: 1px solid rgba(255, 255, 255, .1);
+        backdrop-filter: blur(3px);
+        transition: all .5s;
+
+        &:hover {
+            border-color: $border-color_2;
+            background-color: $background-color_4;
+        }
+
+        i {
+            font-size: 48px;
+            color: $color_6;
+        }
+    }
+}
+
+.branch {
+    background-image: url(./../../public/images/memphis_3.png);
+    background-position: left bottom;
+    background-size: 50% auto;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 70px 0;
+
+    &::before {
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.5);
+    }
+
+    p {
+        color: $color_5;
+    }
+
+    .branch_img {
+        img {
+            width: 100%;
+        }
+    }
+
+    .branch_title {
+        background: rgba(255, 255, 255, .5);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        padding: 40px 40px;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .branch_content {
+        padding: 50px 0;
+    }
+}
+
+footer {
+    background: #222222;
+
+    .footer_bottom {
+        p {
+            color: $color_7;
+        }
+
+        border-top: 1px solid rgb(168, 168, 168, 0.3);
+    }
+
+    .footer_top {
+        a {
+            color: $color_7;
+            display: inline-block;
+            width: 42px;
+            height: 42px;
+            background: transparent;
+            border: 1px solid rgb(168, 168, 168, 0.3);
+            border-radius: 50%;
+            line-height: 40px;
+            margin-left: 10px;
+            transition: all 0.5s ease-in-out;
+
+            &:hover {
+                color: $color_6;
+                border-color: $border-color_3;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .branch {
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    header {
+        .navbar-collapse {
+            background-color: $background-color_5;
+
+            .nav-link {
+                color: $color_3 !important;
+                margin-left: 8px;
+
+                &:hover {
+                    background-color: $background-color_6;
+                    color: $color_4 !important;
+
+                    &::before {
+                        width: 0;
+                    }
+                }
+            }
+
+            #home {
+                width: 0;
+            }
+        }
+    }
+}

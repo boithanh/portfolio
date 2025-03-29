@@ -1,0 +1,30 @@
+$color_1: white;
+$background-color_1: #35a22c;
+$background-color_2: green;
+$border-color_1: green;
+
+@import "./../styles/hometemplate.scss";
+
+/* Carousel-custom-css */
+.carousel-indicators {
+    [data-bs-target] {
+        height: 13px !important;
+        width: 13px !important;
+        border: none !important;
+        border-radius: 50% !important;
+    }
+
+    .active {
+        background-color: $background-color_1 !important;
+    }
+}
+
+.cyber_project {
+    .nav {
+        button.active {
+            background-color: $background-color_2 !important;
+            color: $color_1 !important;
+            border-color: $border-color_1 !important;
+        }
+    }
+}
