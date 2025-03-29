@@ -6,7 +6,7 @@ interface Props {
 
 const Page = ({ params }: { params: { slug: string } }) => {
     const { slug } = params;
-    return <div>Danh mục sản phẩm: {params.slug}</div>;
+    return <div>Danh mục sản phẩm: {slug}</div>;
 
 };
 
