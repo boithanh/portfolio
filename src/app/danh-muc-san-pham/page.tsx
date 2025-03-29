@@ -1,21 +1,13 @@
-import { notFound } from "next/navigation";
+import React from 'react'
 
 interface Props {
     params: { slug: string };
 }
 
-export async function generateStaticParams() {
-    const posts = await fetch("https://.../posts").then((res) => res.json());
-
-    return posts.map((post: any) => ({
-        slug: post.slug,
-    }));
-}
-
-const Page = async ({ params }: Props) => {
-    if (!params.slug) return notFound(); // Xử lý nếu slug không tồn tại
-
+const Page = ({ params }: { params: { slug: string } }) => {
+    const { slug } = params;
     return <div>Danh mục sản phẩm: {params.slug}</div>;
+
 };
 
-export default Page;
+export default Page
