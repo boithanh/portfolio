@@ -1,3 +1,4 @@
+'use client';
 import React from 'react'
 import animationPageNotFound from './../../assets/animation/pageNotFoundAnimation.json'
 import dynamic from 'next/dynamic'
