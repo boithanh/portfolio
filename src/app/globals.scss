@@ -3,7 +3,7 @@ $background-color_1: #35a22c;
 $background-color_2: green;
 $border-color_1: green;
 
-@import "./../styles/HomeTemplate.scss";
+@use "./../styles/HomeTemplate.scss";
 
 /* Carousel-custom-css */
 .carousel-indicators {
