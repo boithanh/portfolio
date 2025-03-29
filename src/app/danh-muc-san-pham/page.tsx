@@ -1,11 +1,13 @@
 import React from "react";
 
-interface Props {
-    params: Awaited<{ slug: string }>;
-}
-
-const Page = ({ params }: Props) => {
-    return <div>Danh mục sản phẩm: {params.slug}</div>;
+type Props = {
+    params: Promise<{ slug: string }>;
 };
+
+const Page = async ({ params }: Props) => {
+    const resolvedParams = await params; // Giải quyết Promise
+    return <div>Danh mục sản phẩm: {resolvedParams.slug}</div>;
+};
+
 
 export default Page;
