@@ -1,4 +1,4 @@
-import Header from '@/components/Header'
+import Header from '@/components/Header/Header'
 import React from 'react'
 import Banner from './_components/Banner'
 import { PageProps } from '../../../../.next/types/app/page'
@@ -11,7 +11,6 @@ type Props = {
 
 const page = async ({ params }: PageProps) => {
     const { slug } = await params;
-    console.log(slug);
     return (
         <div>
             <Header />
