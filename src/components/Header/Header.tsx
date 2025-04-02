@@ -5,13 +5,13 @@ type Props = {}
 
 const Header = (props: Props) => {
     return (
-        <header id="totop" className="position-absolute top-0 start-0" style={{ "zIndex": 1, "width": "100%" }}>
+        <header id="totop" className="position-absolute top-0 start-0" style={{ "zIndex": 2, "width": "100%" }}>
             <nav className="navbar navbar-expand-lg navbar-dark py-3">
                 <div className="container">
-                    <a className="navbar-brand text-white" href="#">
-                        <i className="fa fa-dice-d20 text-success" />
-                        <span>You're welcome</span>
-                    </a>
+                    <Link className="navbar-brand text-white d-flex align-items-center sm:d-block" href="/">
+                        <i className="fa fa-dice-d20 text-success mx-2" />
+                        <span>Portfolio</span>
+                    </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon" />
                     </button>

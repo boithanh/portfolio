@@ -1,0 +1,33 @@
+@use "./../helpers//variable" as *;
+
+footer {
+    background: #222222;
+
+    .footer_bottom {
+        p {
+            color: $color_7;
+        }
+
+        border-top: 1px solid rgb(168, 168, 168, 0.3);
+    }
+
+    .footer_top {
+        a {
+            color: $color_7;
+            display: inline-block;
+            width: 42px;
+            height: 42px;
+            background: transparent;
+            border: 1px solid rgb(168, 168, 168, 0.3);
+            border-radius: 50%;
+            line-height: 40px;
+            margin-left: 10px;
+            transition: all 0.5s ease-in-out;
+
+            &:hover {
+                color: $color_6;
+                border-color: $border-color_3;
+            }
+        }
+    }
+}

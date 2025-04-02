@@ -1,0 +1,46 @@
+@use "./../helpers//variable" as *;
+
+.cyber_project {
+    .project_item {
+        img {
+            width: 100%;
+            border-radius: 12px 12px 0 0;
+        }
+
+        box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+        rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+        border-radius: 12px;
+
+        .project_item_text {
+            text-align: center;
+            padding: 20px 15px 30px 15px;
+            border: 1px solid transparent;
+            border-radius: 0 0 12px 12px;
+            border-top: none;
+            transition: all 0.5s;
+        }
+
+        &:hover {
+            .project_item_text {
+                border-color: $border-color_1;
+
+                h5 {
+                    color: $color_3;
+                }
+            }
+        }
+
+        p {
+            color: $color_5;
+        }
+    }
+
+    .title {
+        color: $color_5;
+    }
+
+    .cyber_project_title {
+        width: 70%;
+        text-align: center;
+    }
+}

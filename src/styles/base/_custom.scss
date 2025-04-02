@@ -1,0 +1,91 @@
+@use "./../helpers//variable" as *;
+
+body {
+    .container {
+        max-width: 1140px;
+    }
+
+    font-family: Hind,
+    sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "MuseoModerno",
+        sans-serif !important;
+}
+
+
+
+.title {
+    h3 {
+        font-size: 20px;
+        color: $color_1;
+        line-height: 30px;
+        padding-top: 25px;
+        font-weight: 800;
+    }
+
+    h2 {
+        font-size: 36px;
+        line-height: 42px;
+        color: $color_2;
+        font-weight: bolder;
+    }
+
+    p {
+        padding-top: 15px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.back_to_top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: $background-color_2;
+    color: $color_4;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.cd-top--fade-out {
+    opacity: .5;
+}
+
+/* Bootstrap carousel custom css */
+.carousel-indicators {
+    [data-bs-target] {
+        height: 13px !important;
+        width: 13px !important;
+        border: none !important;
+        border-radius: 50% !important;
+    }
+
+    .active {
+        background-color: $background-color_1 !important;
+    }
+}
+
+.cyber_project {
+    .nav {
+        button.active {
+            background-color: $background-color_2 !important;
+            color: $color_1 !important;
+            border-color: $border-color_1 !important;
+        }
+    }
+}

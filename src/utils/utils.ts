@@ -4,7 +4,7 @@ function checkCarousel() {
         const carousel = document.querySelector("#carouselExampleIndicators");
         if (carousel) {
             new bootstrap.Carousel(carousel, {
-                interval: 3000,
+                interval: 6000,
                 ride: "carousel",
             });
         } else {

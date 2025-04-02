@@ -1,0 +1,67 @@
+@use "./../helpers//variable" as *;
+
+header {
+    span {
+        font-family: "MuseoModerno",
+            sans-serif !important;
+    }
+
+    #home {
+        color: $color_3 !important;
+
+        @media screen and (max-width: 991.98px) {
+            width: 0;
+        }
+    }
+
+    @media screen and (max-width: 991.98px) {
+        .navbar-collapse {
+            background-color: $background-color_5;
+
+            .nav-link {
+                color: $color_3 !important;
+                margin-left: 8px;
+
+                &:hover {
+                    background-color: $background-color_6;
+                    color: $color_4 !important;
+
+                    &::before {
+                        width: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .collapse {
+        .nav-link {
+            &:hover {
+                &::before {
+                    width: 100%;
+                }
+
+                color: $color_3 !important;
+            }
+        }
+    }
+
+    .navbar {
+        i {
+            font-size: 45px;
+        }
+    }
+
+    .navbar-brand {
+        font-size: 36px;
+        padding-left: 10px;
+    }
+
+    .navbar-toggler {
+        background: green;
+
+        &:hover {
+            background-color: $background-color_1;
+        }
+    }
+}

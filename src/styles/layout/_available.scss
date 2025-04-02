@@ -1,0 +1,45 @@
+@use "./../helpers//variable" as *;
+
+.cyber_available {
+    color: $color_4;
+    background-image: url(./../../../public/images/3.jpg);
+    padding: 100px 0 120px;
+    position: relative;
+    text-align: center;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $background-color_3;
+    }
+
+    .cyber_avai_title {
+        h2 {
+            color: $color_4;
+        }
+    }
+
+    .cyber_avai_item {
+        padding: 40px 40px;
+        transition: .3s;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, .1);
+        border: 1px solid rgba(255, 255, 255, .1);
+        backdrop-filter: blur(3px);
+        transition: all .5s;
+
+        &:hover {
+            border-color: $border-color_2;
+            background-color: $background-color_4;
+        }
+
+        i {
+            font-size: 48px;
+            color: $color_6;
+        }
+    }
+}

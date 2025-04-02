@@ -1,0 +1,46 @@
+@use "./../helpers//variable" as *;
+
+.branch {
+    background-image: url(./../../../public/images/memphis_3.png);
+    background-position: left bottom;
+    background-size: 50% auto;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 70px 0;
+
+    &::before {
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.5);
+    }
+
+    @media screen and (max-width: 576px) {
+        background-size: cover;
+    }
+
+    p {
+        color: $color_5;
+    }
+
+    .branch_img {
+        img {
+            width: 100%;
+        }
+    }
+
+    .branch_title {
+        background: rgba(255, 255, 255, .5);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        padding: 40px 40px;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .branch_content {
+        padding: 50px 0;
+    }
+}
