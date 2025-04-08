@@ -1,18 +1,26 @@
+'use client';
 import Link from 'next/link'
 import React from 'react'
-import PageNotFoundAnimation from './PageNotFoundAnimation'
+import animationPageNotFound from './../../assets/animation/pageNotFoundAnimation.json'
+import dynamic from 'next/dynamic'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 type Props = {}
 
 const PageNotFound = (props: Props) => {
+    const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
     return (
-        <div className="text-center flex flex-col items-center h-screen justify-center">
-            <PageNotFoundAnimation />
+        <div className="text-center">
+            <Lottie
+                animationData={animationPageNotFound}
+                loop={true}
+                style={{ width: "600px", height: "600px", margin: "20px auto 0 auto" }}
+            />
             <Link
                 href={"/"}
-                className="px-6 py-3 bg-[#E31C8D] hover:bg-[#211C5B] border-2 border-black delay-75 rounded-xl text-white"
+                className="btn btn-primary text-white translate-middle-y"
             >
-                Bấm vào để quay về trang chủ
+                Quay về trang chủ
             </Link>
         </div>
     )

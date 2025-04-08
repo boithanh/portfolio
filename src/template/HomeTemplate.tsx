@@ -9,6 +9,9 @@ import Branch from '@/components/Branch/Branch';
 import Footer from '@/components/Footer/Footer';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Provider } from 'react-redux';
+import { store } from '@/redux/configStore';
+
 type Props = {}
 
 const HomeTemplate = (props: Props) => {
@@ -23,14 +26,16 @@ const HomeTemplate = (props: Props) => {
     }, []);
     return (
         <>
-            <Header />
-            <main>
-                <Carousel />
-                <BoiThanhProject />
-                <Available />
-                <Branch />
-            </main>
-            <Footer />
+            <Provider store={store}>
+                <Header />
+                <main>
+                    <Carousel />
+                    <BoiThanhProject />
+                    <Available />
+                    <Branch />
+                </main>
+                <Footer />
+            </Provider>
         </>
     )
 }

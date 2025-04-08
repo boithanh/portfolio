@@ -1,8 +1,1 @@
-@use "./../styles/base/reset";
-@use "./../styles/base/custom";
-@use "./../styles/layout/available" as *;
-@use "./../styles/layout/branch" as *;
-@use "./../styles/layout/carousel" as *;
-@use "./../styles/layout/footer" as *;
-@use "./../styles/layout/header" as *;
-@use "./../styles/layout/project" as *;
+@use './../styles/style.scss'

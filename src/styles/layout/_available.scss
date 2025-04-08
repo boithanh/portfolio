@@ -3,6 +3,7 @@
 .cyber_available {
     color: $color_4;
     background-image: url(./../../../public/images/3.jpg);
+    background-attachment: fixed;
     padding: 100px 0 120px;
     position: relative;
     text-align: center;
@@ -25,12 +26,15 @@
 
     .cyber_avai_item {
         padding: 40px 40px;
+        width: 356px;
+        height: 345px;
         transition: .3s;
         border-radius: 10px;
         background: rgba(255, 255, 255, .1);
         border: 1px solid rgba(255, 255, 255, .1);
         backdrop-filter: blur(3px);
         transition: all .5s;
+
 
         &:hover {
             border-color: $border-color_2;

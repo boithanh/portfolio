@@ -3,6 +3,8 @@
 .cyber_carousel {
     .carousel-item {
         .carousel_content {
+            z-index: 2;
+
             img {
                 width: 150px;
                 height: 150px;
@@ -35,6 +37,7 @@
             position: absolute;
             top: 0;
             left: 0;
+            z-index: 1;
         }
     }
 }
