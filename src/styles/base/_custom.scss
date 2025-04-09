@@ -17,11 +17,8 @@ h4 {
         sans-serif !important;
 }
 
-
-
 .title {
     h3 {
-        font-size: 20px;
         color: $color_1;
         line-height: 30px;
         padding-top: 25px;
@@ -29,7 +26,6 @@ h4 {
     }
 
     h2 {
-        font-size: 36px;
         line-height: 42px;
         color: $color_2;
         font-weight: bolder;
@@ -37,31 +33,9 @@ h4 {
 
     p {
         padding-top: 15px;
-        font-size: 16px;
+        // font-size: 16px;
         line-height: 24px;
     }
-}
-
-.back_to_top {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background-color: $background-color_2;
-    color: $color_4;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-    border-radius: 12px;
-}
-
-.cd-top--is-visible {
-    visibility: visible;
-    opacity: 1;
-}
-
-.cd-top--fade-out {
-    opacity: .5;
 }
 
 /* Bootstrap carousel custom css */

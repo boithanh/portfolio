@@ -19,13 +19,15 @@ const Available = (props: Props) => {
                         {
                             available.map((item, index) => {
                                 let { icon, subTitle, subContent } = item
-                                return (<div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-5">
-                                    <div className="cyber_avai_item title">
-                                        <i className={icon} />
-                                        <h3>{subTitle}</h3>
-                                        <p>{subContent}</p>
+                                return (
+                                    <div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-5" key={index}>
+                                        <div className="cyber_avai_item title">
+                                            <i className={icon} />
+                                            <h3>{subTitle}</h3>
+                                            <p>{subContent}</p>
+                                        </div>
                                     </div>
-                                </div>)
+                                )
                             })
                         }
                     </div>

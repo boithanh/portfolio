@@ -18,15 +18,20 @@
             text-align: center;
 
             h1 {
-                font-size: 56px;
+                font-size: 3.5rem;
                 color: $color_4;
-                line-height: 65px;
+                line-height: 4.063rem;
             }
 
             p {
                 font-size: 24px;
                 color: $color_4;
                 line-height: 36px;
+            }
+
+            @media screen and (max-width:768px) {
+                width: 100%;
+                padding: 10px;
             }
         }
 

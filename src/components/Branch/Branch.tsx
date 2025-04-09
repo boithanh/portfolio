@@ -7,7 +7,7 @@ const Branch = (props: Props) => {
         <section className="branch">
             <div className="container">
                 <div className="row">
-                    <div className="col-12 col-sm-5 col-md-5 col-lg-5 col-xl-5">
+                    <div className="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
                         <div className="branch_title title">
                             <h2>EDUCATION and CERTIFICATIONS</h2>
                             <p>🎓 Graduated from <b>Saigon University of Technology</b>, majoring in <b className='text-success'>Computer Science.</b></p>
@@ -15,10 +15,10 @@ const Branch = (props: Props) => {
                             <p><b className='text-success'>Frofessional Front-end Developer</b> – <b>Cybersoft Academy</b></p>
                         </div>
                     </div>
-                    <div className="col-12 col-sm-5 col-md-5 col-lg-5 col-xl-7 position-relative">
+                    <div className="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-7 position-relative">
                         <div className="branch_content">
                             <h2>EXPERIENCE</h2>
-                            <ul>
+                            <ul className='mb-5'>
                                 <li className='mb-3'><b className='text-danger'>Cybersoft Software Development Bootcamp Participant: </b> Acquired hands-on experience in building web applications using HTML, CSS, JavaScript, React, and Redux, completing 5+ real-world projects.
                                     Developed multiple UI components following UI/UX best practices, improving accessibility and responsiveness by 30% based on Lighthouse
                                     audits.Implemented and optimized dynamic web features such as interactive forms, real-time data fetching, and state management, enhancing
@@ -29,22 +29,23 @@ const Branch = (props: Props) => {
                                     tickets.</li>
                                 <li className='mb-3'><b className='text-danger'>Coffe Mug: </b>Developed a web interface on the WordPress platform using HTML, CSS, and PHP, enhancing user engagement by 30%.</li>
                             </ul>
-                            <div className="branch_img">
+                            <div className="branch_img mb-3">
                                 <div className="row">
                                     <div className="col">
-                                        <img src="/images/award-1.png" alt="award" />
+                                        <i className="fa-brands fa-html5"></i>
                                     </div>
                                     <div className="col">
-                                        <img src="/images/award-2.png" alt="award" />
+                                        <i className="fa-brands fa-css3-alt"></i>
                                     </div>
                                     <div className="col">
-                                        <img src="/images/award-3.png" alt="award" />
+                                        <i className="fa-brands fa-js"></i>
                                     </div>
                                     <div className="col">
-                                        <img src="/images/award-4.png" alt="award" />
+                                        <i className="fa-brands fa-react" />
+
                                     </div>
                                     <div className="col">
-                                        <img src="/images/award-5.png" alt="award" />
+                                        <i className="fa-brands fa-node-js"></i>
                                     </div>
                                 </div>
                             </div>
@@ -52,7 +53,7 @@ const Branch = (props: Props) => {
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     )
 }
 
