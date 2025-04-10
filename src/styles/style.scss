@@ -1,9 +1,10 @@
 @use "./../styles/base/reset";
 @use "./../styles/base/custom";
-@use "./../styles/layout/available" as *;
-@use "./../styles/layout/branch" as *;
-@use "./../styles/layout/carousel" as *;
-@use "./../styles/layout/footer" as *;
-@use "./../styles/layout/header" as *;
-@use "./../styles/layout/project" as *;
-@use "./../styles/layout/cardtheme" as *;
+@use "./../styles/layout/available";
+@use "./../styles/layout/branch";
+@use "./../styles/layout/carousel";
+@use "./../styles/layout/footer";
+@use "./../styles/layout/header";
+@use "./../styles/layout/project";
+@use "./../styles/layout/cardtheme";
+@use "./layout/entertainment";

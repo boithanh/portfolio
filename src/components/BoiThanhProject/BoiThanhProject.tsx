@@ -24,7 +24,6 @@ const BoiThanhProject = (props: Props) => {
     function renderItem(it = items) {
         return it.map((item) => {
             let { tabProject, project } = item;
-
             return (
                 <div
                     key={tabProject}
@@ -69,8 +68,8 @@ const BoiThanhProject = (props: Props) => {
         }
     }
     return (
-        <section className="cyber_project py-5">
-            <div className="container py-5">
+        <section className="cyber_project my-5">
+            <div className="container">
                 <div className="row justify-content-center">
                     <div className="cyber_project_title title mb-3">
                         <h2>I Love What I Do

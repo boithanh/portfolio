@@ -1,0 +1,27 @@
+@use "./../helpers/variable" as *;
+
+.entertainment {
+    background: url("./../../assets/images/entertainment-pic.webp");
+    background-color: $background-color_8;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+
+    .enter-inner {
+        padding: 100px 0 0 0;
+
+        .title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h2 {
+                color: $color_1;
+            }
+
+            @media screen and (max-width:431px) {
+                display: block;
+            }
+        }
+    }
+}

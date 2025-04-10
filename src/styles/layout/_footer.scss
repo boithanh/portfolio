@@ -1,7 +1,7 @@
-@use "./../helpers//variable" as *;
+@use "./../helpers/variable" as *;
 
 footer {
-    background: #222222;
+    background: $background-color_8;
 
     .footer_bottom {
         p {
@@ -18,7 +18,7 @@ footer {
             width: 42px;
             height: 42px;
             background: transparent;
-            border: 1px solid rgb(168, 168, 168, 0.3);
+            border: 1px solid $border-color_4;
             border-radius: 50%;
             line-height: 40px;
             margin-left: 10px;

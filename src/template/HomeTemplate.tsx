@@ -12,6 +12,7 @@ import "aos/dist/aos.css";
 import { Provider } from 'react-redux';
 import { store } from '@/redux/configStore';
 import CardCustom from '@/hooks/cardCustom';
+import Entertainment from '@/components/Entertainment/Entertainment';
 
 
 
@@ -36,6 +37,7 @@ const HomeTemplate = (props: Props) => {
                     <BoiThanhProject />
                     <Available />
                     <Branch />
+                    <Entertainment />
                     {/* <CardCustom /> */}
                 </main>
                 <Footer />
