@@ -14,7 +14,7 @@ const PageNotFound = (props: Props) => {
             <Lottie
                 animationData={animationPageNotFound}
                 loop={true}
-                style={{ width: "600px", height: "600px", margin: "20px auto 0 auto" }}
+                style={{ width: "100%", minHeight: "600px", margin: "20px auto 0 auto" }}
             />
             <Link
                 href={"/"}
