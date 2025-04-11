@@ -38,7 +38,7 @@ const HomeTemplate = (props: Props) => {
                     <Available />
                     <Branch />
                     <Entertainment />
-                    {/* <CardCustom /> */}
+                    <CardCustom />
                 </main>
                 <Footer />
             </Provider>

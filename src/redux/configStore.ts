@@ -1,11 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit'
 import projectSlice from './slices/projectSlice'
 import availableSlice from './slices/availableSlice'
+import carouselSlice from './slices/carouselSlice'
 // ...
 
 export const store = configureStore({
     reducer: {
-        projectSlice, availableSlice
+        projectSlice, availableSlice, carouselSlice
     }
 })
 

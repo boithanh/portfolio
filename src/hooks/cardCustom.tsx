@@ -1,25 +1,41 @@
 import React from 'react'
 
-type Props = {}
+type Props = {
+    projectImg: string,
+    projectLink?: string,
+    projectTitle: string,
+    projectSubTitle: string,
+    projectContent: string,
+    projectSource?: string
+}
 
-const CardCustom = (props: Props) => {
+
+
+const CardCustom = ({ projectImg, projectLink, projectTitle, projectSubTitle, projectContent }: Props) => {
     return (
-        <div className='container'>
-            <div className="grid">
-                <figure className="effect-kira">
-                    <img src="/images/g4.jpg" alt="img17" />
-                    <figcaption>
-                        <h2>Dark <span>Kira</span></h2>
-                        <p>
-                            <a href="#"><i className="fa fa-fw fa-home" /></a>
-                            <a href="#"><i className="fa fa-fw fa-download" /></a>
-                            <a href="#"><i className="fa fa-fw fa-heart" /></a>
-                            <a href="#"><i className="fa fa-fw fa-share" /></a>
-                        </p>
-                    </figcaption>
-                </figure>
-            </div>
+        <div className="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+            <div className="project_item mb-5" data-aos='flip-left'>
+                <div className="grid">
+                    <figure className="effect-winston">
+                        <img src={projectImg} alt="err" />
+                        <figcaption>
+                            <p>
+                                <a href={projectLink}><i className="fa-solid fa-cloud" /></a>
+                                <a href={"/"}><i className="fa-brands fa-github" /></a>
+                                <a href={"/"}><i className="fa-solid fa-heart" /></a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div className="project_item_text">
+                    <h4>{projectTitle}</h4>
+                    <h6>{projectSubTitle}</h6>
+                    <p>{projectContent}</p>
+                    <div className='d-flex justify-content-center position-absolute'>
 
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

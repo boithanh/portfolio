@@ -1,9 +1,11 @@
+import CardCustom from '@/hooks/cardCustom'
 import { RootState } from '@/redux/configStore'
 import { changeTab } from '@/redux/slices/projectSlice'
 import React, { ReactNode, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
-type Props = {}
+type Props = {
+}
 
 const BoiThanhProject = (props: Props) => {
     const { items, currentTab } = useSelector((state: RootState) => state.projectSlice);
@@ -34,20 +36,7 @@ const BoiThanhProject = (props: Props) => {
                 >
                     <div className="row justify-content-center align-content-center">
                         {project.map((data, index) => (
-                            <div key={index} className="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                                <div className="project_item animate__animated animate__zoomIn mb-5">
-                                    <img src={data?.projectImg} alt="err" />
-                                    <div className="project_item_text">
-                                        <h4>{data?.projectTitle}</h4>
-                                        <h6>{data?.projectSubTitle}</h6>
-                                        <p>{data?.projectContent}</p>
-                                        <div className='d-flex justify-content-center'>
-                                            <a href={data?.projectLink} rel="noopener noreferrer" className='btn btn-primary mx-1'>View page</a>
-                                            <a href="" target="_blank" rel="noopener noreferrer" className='btn btn-outline-dark mx-1'>View source</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            < CardCustom projectImg={data.projectImg} projectContent={data.projectContent} projectTitle={data.projectTitle} projectSubTitle={data.projectSubTitle} projectLink={data.projectLink} projectSource={data?.projectSource} />
                         ))}
                     </div>
                 </div>
