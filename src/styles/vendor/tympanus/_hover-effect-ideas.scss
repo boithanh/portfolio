@@ -23,7 +23,7 @@
     display: block;
     min-height: 360px;
     max-width: 480px;
-    opacity: 0.8;
+    opacity: 0.9;
     object-fit: cover;
 }
 
@@ -146,11 +146,6 @@ figure.effect-winston a {
         color: #cc6055;
     }
 }
-
-// figure.effect-winston a:hover:first-child,
-// figure.effect-winston a:focus:first-child {
-//     color: #cc6055;
-// }
 
 figure.effect-winston p a i {
     opacity: 0;

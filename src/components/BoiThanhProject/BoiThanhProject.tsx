@@ -11,7 +11,7 @@ const BoiThanhProject = (props: Props) => {
     const { items, currentTab } = useSelector((state: RootState) => state.projectSlice);
     const dispatch = useDispatch();
     function renderTab(it = items) {
-        return items.map((item, index) => {
+        return it.map((item, index) => {
             let { tabProject } = item;
             return (
                 <li className="nav-item" role="presentation" key={index}>
@@ -36,7 +36,7 @@ const BoiThanhProject = (props: Props) => {
                 >
                     <div className="row justify-content-center align-content-center">
                         {project.map((data, index) => (
-                            < CardCustom projectImg={data.projectImg} projectContent={data.projectContent} projectTitle={data.projectTitle} projectSubTitle={data.projectSubTitle} projectLink={data.projectLink} projectSource={data?.projectSource} />
+                            < CardCustom key={index} projectImg={data.projectImg} projectContent={data.projectContent} projectTitle={data.projectTitle} projectSubTitle={data.projectSubTitle} projectLink={data.projectLink} projectSource={data?.projectSource} />
                         ))}
                     </div>
                 </div>

@@ -32,7 +32,6 @@ const CardCustom = ({ projectImg, projectLink, projectTitle, projectSubTitle, pr
                     <h6>{projectSubTitle}</h6>
                     <p>{projectContent}</p>
                     <div className='d-flex justify-content-center position-absolute'>
-
                     </div>
                 </div>
             </div>

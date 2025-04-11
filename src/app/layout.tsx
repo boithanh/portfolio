@@ -3,8 +3,22 @@ import type { Metadata } from "next";
 
 
 export const metadata: Metadata = {
-  title: "Bối Thạnh's Portfolio",
-  description: "This is my portfolio, thanks you for watching",
+  openGraph: {
+    title: "Bối Thạnh's Portfolio",
+    description: "This is my portfolio, thanks you for watching",
+    url: "https://boithanh-dev.vercel.app/",
+    siteName: "My Portfolio",
+    images: [
+      {
+        url: "https://boithanh-dev.vercel.app/images/finland.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Preview of Bối Thạnh Portfolio",
+      },
+    ],
+    locale: "vi_VN",
+    type: "website",
+  }
 };
 
 export default function RootLayout({
