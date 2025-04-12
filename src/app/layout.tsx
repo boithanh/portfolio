@@ -5,13 +5,12 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Bối Thạnh's Portfolio",
   description: "This is my portfolio, thanks you for watching",
-  metadataBase: new URL("https://boithanh-dev.vercel.app"),
   openGraph: {
     url: "https://boithanh-dev.vercel.app/",
     siteName: "My Portfolio",
     images: [
       {
-        url: "https://boithanh-dev.vercel.app/images/mountain-2.jpg",
+        url: "https://boithanh-dev.vercel.app/images/mountain.jpg",
         width: 1200,
         height: 630,
         alt: "Preview of Bối Thạnh Portfolio",
