@@ -3,6 +3,8 @@ import React from 'react'
 type Props = {}
 
 const Branch = (props: Props) => {
+    const iconList = ['fa-html5', 'fa-css3-alt', 'fa-js', 'fa-react', 'fa-node-js'];
+    const icons = Array.from({ length: 10 }, (_, i) => iconList[i % iconList.length]);
     return (
         <section className="branch">
             <div className="container">
@@ -30,34 +32,15 @@ const Branch = (props: Props) => {
                                 <li className='mb-3'><b className='text-danger'>Coffe Mug: </b>Developed a web interface on the WordPress platform using HTML, CSS, and PHP, enhancing user engagement by 30%.</li>
                             </ul>
                             <div className="branch_img mb-3">
-
-                                <div className='img-animation'>
-
-                                    <i className="fa-brands fa-html5"></i>
-
-
-                                    <i className="fa-brands fa-css3-alt"></i>
-
-
-                                    <i className="fa-brands fa-js"></i>
-
-
-                                    <i className="fa-brands fa-react" />
-
-
-
-                                    <i className="fa-brands fa-node-js"></i>
-
-
-                                    <i className="fa-brands fa-html5"></i>
-
-
-                                    <i className="fa-brands fa-css3-alt"></i>
-
-
-                                    <i className="fa-brands fa-js"></i>
-
-
+                                <div className="img-animation">
+                                    {
+                                        icons.map((item, index) => {
+                                            console.log(item);
+                                            return (
+                                                <i key={index} className={`fa-brands ${item}`}></i>
+                                            )
+                                        })
+                                    }
                                 </div>
                             </div>
                         </div>

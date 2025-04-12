@@ -23,7 +23,7 @@ const Header = (props: Props) => {
                             <li className="nav-item">
                                 <Link href={"/about"} className='nav-link me-3 text-white position-relative' aria-current={"page"} >About</Link>                           </li>
                             <li className="nav-item">
-                                <Link href={"/service"} className='nav-link me-3 text-white position-relative' aria-current={"page"} >Service</Link>
+                                <Link href={"/projects"} className='nav-link me-3 text-white position-relative' aria-current={"page"} >Projects</Link>
                             </li>
                             <li className="nav-item">
                                 <Link href={"/contact"} className='nav-link me-3 text-white position-relative' aria-current={"page"} >Contact</Link>

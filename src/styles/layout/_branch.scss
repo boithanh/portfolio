@@ -32,14 +32,14 @@
         .img-animation {
             display: flex;
             width: max-content;
-            animation: slide 15s linear infinite;
+            animation: slide 10s linear infinite;
 
             i {
-                font-size: 4rem;
+                font-size: 3rem;
                 margin-right: 1.5rem;
                 flex: 0 0 auto;
                 color: rgb(40, 60, 107);
-                min-width: 200px;
+                min-width: 118.2px;
             }
         }
     }
