@@ -9,7 +9,6 @@ type Props = {}
 const Carousel = (props: Props) => {
     const carouselData = useSelector((state: RootState) => state.carouselSlice);
 
-
     useEffect(() => {
         if (typeof window !== "undefined") {
             checkCarousel();
@@ -19,11 +18,15 @@ const Carousel = (props: Props) => {
         <section className="cyber_carousel">
             <div id="carouselExampleIndicators" className="carousel carousel-fade slide" data-bs-ride="carousel">
                 <div className="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={0} className="active" aria-current="true" aria-label="Slide 1" />
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={1} aria-label="Slide 2" />
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={2} aria-label="Slide 3" />
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={3} aria-label="Slide 4" />
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={4} aria-label="Slide 5" />
+                    {
+                        carouselData.map((item, index) => {
+                            {
+                                return (
+                                    <button key={index} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={index} className={index === 0 ? "active" : ""} aria-current="true" aria-label={`Slide ${index + 1}`} />
+                                )
+                            }
+                        })
+                    }
                 </div>
                 <div className="carousel-inner">
                     {
@@ -34,9 +37,9 @@ const Carousel = (props: Props) => {
                                     <div className="overlay" />
                                     <Image src={`/images/${background}`} sizes='99vw' className='d-block w-100 vh-100 object-fit-cover' alt='err' fill priority />
                                     <div className="carousel_content">
-                                        <img src={`/images/${avatar}`} className='object-fit-cover' />
-                                        <h1>{title}</h1>
-                                        <p>{content}</p>
+                                        <img src={`/images/${avatar}`} className='object-fit-cover animate__animated animate__fadeInUp' />
+                                        <h1 className='animate__animated animate__fadeInUp animate__delay-1s'>{title}</h1>
+                                        <p className='animate__animated animate__fadeInUp animate__delay-2s'>{content}</p>
                                     </div>
                                 </div>
                             )

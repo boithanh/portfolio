@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://boithanh-dev.vercel.app"),
   openGraph: {
     title: "Bối Thạnh's Portfolio",
     description: "This is my portfolio, thanks you for watching",
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
     siteName: "My Portfolio",
     images: [
       {
-        url: "https://boithanh-dev.vercel.app/images/seo-2.jpg",
+        url: "https://boithanh-dev.vercel.app/images/mountain-2.png",
         width: 1200,
         height: 630,
         alt: "Preview of Bối Thạnh Portfolio",

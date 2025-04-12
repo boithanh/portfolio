@@ -30,23 +30,34 @@ const Branch = (props: Props) => {
                                 <li className='mb-3'><b className='text-danger'>Coffe Mug: </b>Developed a web interface on the WordPress platform using HTML, CSS, and PHP, enhancing user engagement by 30%.</li>
                             </ul>
                             <div className="branch_img mb-3">
-                                <div className="row">
-                                    <div className="col">
-                                        <i className="fa-brands fa-html5"></i>
-                                    </div>
-                                    <div className="col">
-                                        <i className="fa-brands fa-css3-alt"></i>
-                                    </div>
-                                    <div className="col">
-                                        <i className="fa-brands fa-js"></i>
-                                    </div>
-                                    <div className="col">
-                                        <i className="fa-brands fa-react" />
 
-                                    </div>
-                                    <div className="col">
-                                        <i className="fa-brands fa-node-js"></i>
-                                    </div>
+                                <div className='img-animation'>
+
+                                    <i className="fa-brands fa-html5"></i>
+
+
+                                    <i className="fa-brands fa-css3-alt"></i>
+
+
+                                    <i className="fa-brands fa-js"></i>
+
+
+                                    <i className="fa-brands fa-react" />
+
+
+
+                                    <i className="fa-brands fa-node-js"></i>
+
+
+                                    <i className="fa-brands fa-html5"></i>
+
+
+                                    <i className="fa-brands fa-css3-alt"></i>
+
+
+                                    <i className="fa-brands fa-js"></i>
+
+
                                 </div>
                             </div>
                         </div>

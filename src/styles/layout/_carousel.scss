@@ -1,6 +1,21 @@
-@use "./../helpers//variable" as *;
+@use "./../helpers/variable" as *;
 
 .cyber_carousel {
+    .carousel-indicators {
+        .active {
+            background-color: $background-color_6 !important;
+        }
+
+        [data-bs-target] {
+            height: 13px !important;
+            width: 13px !important;
+            border: none !important;
+            border-radius: 50% !important;
+        }
+
+
+    }
+
     .carousel-item {
         .carousel_content {
             z-index: 2;
@@ -36,7 +51,7 @@
         }
 
         .overlay {
-            background: rgba(39, 43, 54, .5);
+            background: linear-gradient(to right, #272b36, hsl(32deg 100% 1% / 10%));
             width: 100%;
             height: 100%;
             position: absolute;

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 type Props = {
@@ -14,10 +15,11 @@ type Props = {
 const CardCustom = ({ projectImg, projectLink, projectTitle, projectSubTitle, projectContent }: Props) => {
     return (
         <div className="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-            <div className="project_item mb-5" data-aos='flip-left'>
+            <div className="project_item mb-5 animate__animated animate__fadeIn">
                 <div className="grid">
                     <figure className="effect-winston">
-                        <img src={projectImg} alt="err" />
+                        {/* <img src={projectImg} alt="err" /> */}
+                        <Image src={projectImg} width={350} height={256} priority alt='err' />
                         <figcaption>
                             <p>
                                 <a href={projectLink}><i className="fa-solid fa-cloud" /></a>

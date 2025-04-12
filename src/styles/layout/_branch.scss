@@ -27,9 +27,20 @@
     }
 
     .branch_img {
-        i {
-            font-size: 4rem;
-            color: rgb(40, 60, 107);
+        overflow: hidden;
+
+        .img-animation {
+            display: flex;
+            width: max-content;
+            animation: slide 15s linear infinite;
+
+            i {
+                font-size: 4rem;
+                margin-right: 1.5rem;
+                flex: 0 0 auto;
+                color: rgb(40, 60, 107);
+                min-width: 200px;
+            }
         }
     }
 
@@ -43,5 +54,15 @@
 
     .branch_content {
         padding: 50px 0;
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
     }
 }
