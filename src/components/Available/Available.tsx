@@ -7,7 +7,7 @@ type Props = {}
 const Available = (props: Props) => {
     const { title, content, available } = useSelector((state: RootState) => state.availableSlice);
     return (
-        <section className="cyber_available my-5">
+        <section className="cyber_available mb-5">
             <div className="container position-relative">
                 <div className="cyber_avai_title title">
                     <h2>{title}</h2>

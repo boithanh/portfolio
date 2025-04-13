@@ -1,0 +1,44 @@
+@use "./../helpers/variable" as *;
+
+.extra {
+    background: url("./../../assets/images/pexels-sam-lg-1666529.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 200px 50px;
+
+    @media screen and (max-width:431px) {
+        padding: 100px 10px;
+    }
+
+    .title {
+        color: $color_1;
+
+        h2 {
+            color: $color_1;
+        }
+    }
+
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .img-content {
+        background-image: url("./../../assets/images/extra.jpg");
+        background-size: cover;
+        width: 100%;
+        height: auto;
+        min-height: 400px;
+
+        @media screen and (max-width:431px) {
+            background-position: center;
+            background-size: contain;
+            min-height: 199px;
+        }
+    }
+}

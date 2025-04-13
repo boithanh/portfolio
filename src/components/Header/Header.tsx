@@ -17,16 +17,16 @@ const Header = (props: Props) => {
                     </button>
                     <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul className="navbar-nav mr-auto mb-2 mb-lg-0">
-                            <li className="nav-item">
-                                <Link href={"/"} className='nav-link me-3 text-white position-relative' aria-current={"page"} >Home</Link>
+                            <li className="nav-item active">
+                                <Link href={"/"} className='nav-link mx-2 mb-1 text-white position-relative' aria-current={"page"} >Home</Link>
                             </li>
                             <li className="nav-item">
-                                <Link href={"/about"} className='nav-link me-3 text-white position-relative' aria-current={"page"} >About</Link>                           </li>
+                                <Link href={"/comming-soon"} className='nav-link mx-2 mb-1 text-white position-relative' aria-current={"page"} >About</Link>                           </li>
                             <li className="nav-item">
-                                <Link href={"/projects"} className='nav-link me-3 text-white position-relative' aria-current={"page"} >Projects</Link>
+                                <Link href={"/projects"} className='nav-link mx-2 mb-1 text-white position-relative' aria-current={"page"} >Projects</Link>
                             </li>
                             <li className="nav-item">
-                                <Link href={"/contact"} className='nav-link me-3 text-white position-relative' aria-current={"page"} >Contact</Link>
+                                <Link href={"/comming-soon"} className='nav-link mx-2 mb-1 text-white position-relative' aria-current={"page"} >Contact</Link>
                             </li>
                         </ul>
                     </div>

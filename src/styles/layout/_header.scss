@@ -1,50 +1,60 @@
 @use "./../helpers//variable" as *;
 
 header {
+    .nav-item {
+
+        &.active {
+            .nav-link {
+                color: $color_6 !important;
+            }
+
+            &::after {
+                width: 100%;
+            }
+        }
+
+        &::after {
+            content: "";
+            width: 0;
+            height: 2px;
+            background-color: $color_6;
+            display: block;
+            transition: all .5s;
+        }
+
+        &::before {
+            content: "";
+            width: 0;
+            height: 2px;
+            background-color: $color_6;
+            display: block;
+            transition: all .5s;
+        }
+
+        &:hover {
+            &::after {
+                width: 100%;
+            }
+
+            &::before {
+                width: 100%;
+            }
+
+            .nav-link {
+                color: $color_6 !important;
+            }
+        }
+
+        @media screen and (max-width: 820px) {}
+    }
+
     span {
         font-family: "MuseoModerno",
             sans-serif !important;
     }
 
-    #home {
-        color: $color_3 !important;
 
-        @media screen and (max-width: 991.98px) {
-            width: 0;
-        }
-    }
 
-    @media screen and (max-width: 991.98px) {
-        .navbar-collapse {
-            background-color: $background-color_5;
-
-            .nav-link {
-                color: $color_3 !important;
-                margin-left: 8px;
-
-                &:hover {
-                    background-color: $background-color_6;
-                    color: $color_4 !important;
-
-                    &::before {
-                        width: 0;
-                    }
-                }
-            }
-        }
-    }
-
-    .collapse {
-        .nav-link {
-            &:hover {
-                &::before {
-                    width: 100%;
-                }
-
-                color: $color_3 !important;
-            }
-        }
-    }
 
     .navbar {
         i {

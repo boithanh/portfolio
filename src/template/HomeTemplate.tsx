@@ -11,6 +11,7 @@ import Footer from '@/components/Footer/Footer';
 import { Provider } from 'react-redux';
 import { store } from '@/redux/configStore';
 import Entertainment from '@/components/Entertainment/Entertainment';
+import Extra from '@/components/Extra/Extra';
 
 
 
@@ -24,6 +25,7 @@ const HomeTemplate = (props: Props) => {
                 <main>
                     <Carousel />
                     <BoiThanhProject />
+                    <Extra />
                     <Available />
                     <Branch />
                     <Entertainment />
