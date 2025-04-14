@@ -1,13 +1,11 @@
-'use client'
+'use client';
 import React from 'react'
 import { useSelector } from 'react-redux'
-import { RootState, store } from '@/redux/configStore'
+import { RootState } from '@/redux/configStore'
 import CardCustom from '@/hooks/cardCustom'
 
 
-type Props = {}
-
-const AllProject = (props: Props) => {
+const AllProject = () => {
     const { items } = useSelector((state: RootState) => state.projectSlice);
     return (
         <section className='all-project my-5'>
@@ -19,11 +17,15 @@ const AllProject = (props: Props) => {
                         </div>
                     </div>
                     {
-                        items.flatMap((item) =>
-                            item.project.map((data) => (
-                                <CardCustom key={data.projectTitle} projectImg={data.projectImg} projectContent={data.projectContent} projectTitle={data.projectTitle} projectSubTitle={data.projectSubTitle} projectLink={data.projectLink} projectSource={data?.projectSource} />
-                            ))
-                        )
+                        items.flatMap((item) => {
+                            return (
+                                item.project.map((data) => {
+                                    return (
+                                        <CardCustom key={data.projectTitle} projectImg={data.projectImg} projectContent={data.projectContent} projectTitle={data.projectTitle} projectSubTitle={data.projectSubTitle} projectLink={data.projectLink} projectSource={data?.projectSource} />
+                                    )
+                                })
+                            )
+                        })
                     }
                 </div>
             </div>

@@ -1,4 +1,4 @@
-import AllProjectPage from '@/pages/AllProjectPage/AllProjectPage'
+import AllProjectPage from '@/OtherTemplate/AllProjectPage/AllProjectPage';
 import React from 'react'
 
 type Props = {}

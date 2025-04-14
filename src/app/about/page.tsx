@@ -1,4 +1,4 @@
-import AboutPage from '@/pages/AboutPage/AboutPage'
+import AboutPage from '@/OtherTemplate/AboutPage/AboutPage'
 import React from 'react'
 
 type Props = {}

@@ -1,8 +1,10 @@
-import SupportProvider from "@/redux/SupportProvider";
 import "./globals.scss";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'animate.css';
 import type { Metadata } from "next";
+import SupportProvider from "@/redux/SupportProvider";
+
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://boithanh-dev.vercel.app"),
   title: "Bối Thạnh's Portfolio",
