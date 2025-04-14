@@ -1,7 +1,8 @@
+import SupportProvider from "@/redux/SupportProvider";
 import "./globals.scss";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'animate.css';
 import type { Metadata } from "next";
-
-
 export const metadata: Metadata = {
   metadataBase: new URL("https://boithanh-dev.vercel.app"),
   title: "Bối Thạnh's Portfolio",
@@ -47,7 +48,9 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
       </head>
       <body>
-        {children}
+        <SupportProvider>
+          {children}
+        </SupportProvider>
       </body>
     </html>
   );

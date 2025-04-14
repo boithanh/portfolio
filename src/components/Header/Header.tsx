@@ -1,11 +1,17 @@
+'use client'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import React from 'react'
 
-type Props = {}
+type Props = {
+}
 
 const Header = (props: Props) => {
+    const pathname = usePathname();
+    const checkHeader = pathname === "/"
+    // console.log(checkHeader);
     return (
-        <header id="totop" className="position-absolute top-0 start-0" style={{ "zIndex": 2, "width": "100%" }}>
+        <header className={`top-0 start-0 ${!checkHeader && "bg-change"} ${!checkHeader ? "position-relative" : "position-absolute"}`} style={{ "zIndex": 2, "width": "100%" }}>
             <nav className="navbar navbar-expand-lg navbar-dark py-3">
                 <div className="container">
                     <Link className="navbar-brand text-white d-flex align-items-center sm:d-block" href="/">
@@ -21,12 +27,12 @@ const Header = (props: Props) => {
                                 <Link href={"/"} className='nav-link mx-2 mb-1 text-white position-relative' aria-current={"page"} >Home</Link>
                             </li>
                             <li className="nav-item">
-                                <Link href={"/comming-soon"} className='nav-link mx-2 mb-1 text-white position-relative' aria-current={"page"} >About</Link>                           </li>
+                                <Link href={"/about"} className='nav-link mx-2 mb-1 text-white position-relative' aria-current={"page"} >About</Link>                           </li>
                             <li className="nav-item">
                                 <Link href={"/projects"} className='nav-link mx-2 mb-1 text-white position-relative' aria-current={"page"} >Projects</Link>
                             </li>
                             <li className="nav-item">
-                                <Link href={"/comming-soon"} className='nav-link mx-2 mb-1 text-white position-relative' aria-current={"page"} >Contact</Link>
+                                <Link href={"/contact"} className='nav-link mx-2 mb-1 text-white position-relative' aria-current={"page"} >Contact</Link>
                             </li>
                         </ul>
                     </div>

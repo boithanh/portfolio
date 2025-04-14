@@ -1,6 +1,7 @@
 @use "./../helpers//variable" as *;
 
-.cyber_project {
+.cyber_project,
+.all-project {
     .project_item {
         img {
             width: 100%;

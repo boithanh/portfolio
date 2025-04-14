@@ -1,37 +1,33 @@
 'use client';
-import 'animate.css';
-import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useEffect, useState } from 'react'
 import Header from '@/components/Header/Header';
 import Carousel from '@/components/Carousel/Carousel';
 import BoiThanhProject from '@/components/BoiThanhProject/BoiThanhProject';
 import Available from '@/components/Available/Available';
 import Branch from '@/components/Branch/Branch';
 import Footer from '@/components/Footer/Footer';
-import { Provider } from 'react-redux';
-import { store } from '@/redux/configStore';
 import Entertainment from '@/components/Entertainment/Entertainment';
 import Extra from '@/components/Extra/Extra';
 
 
 
-type Props = {}
+type Props = {
+
+}
 
 const HomeTemplate = (props: Props) => {
     return (
         <>
-            <Provider store={store}>
-                <Header />
-                <main>
-                    <Carousel />
-                    <BoiThanhProject />
-                    <Extra />
-                    <Available />
-                    <Branch />
-                    <Entertainment />
-                </main>
-                <Footer />
-            </Provider>
+            <Header />
+            <main>
+                <Carousel />
+                <BoiThanhProject />
+                <Extra />
+                <Available />
+                <Branch />
+                <Entertainment />
+            </main>
+            <Footer />
         </>
     )
 }

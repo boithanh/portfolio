@@ -35,7 +35,7 @@ const Branch = (props: Props) => {
                                 <div className="img-animation">
                                     {
                                         icons.map((item, index) => {
-                                            console.log(item);
+                                            // console.log(item);
                                             return (
                                                 <i key={index} className={`fa-brands ${item}`}></i>
                                             )

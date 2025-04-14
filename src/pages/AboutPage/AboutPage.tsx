@@ -1,22 +1,22 @@
-
+import About from '@/components/About/About'
 import Footer from '@/components/Footer/Footer'
 import Header from '@/components/Header/Header'
-import ContactPage from '@/pages/ContactPage/ContactPage'
-import React from 'react'
+import React, { useEffect } from 'react'
 
-type Props = {}
+type Props = {
+}
 
-const page = (props: Props) => {
+const AboutPage = (props: Props) => {
+
     return (
         <>
             <Header />
             <main>
-                <ContactPage />
+                <About />
             </main>
             <Footer />
         </>
-
     )
 }
 
-export default page
+export default AboutPage

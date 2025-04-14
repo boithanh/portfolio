@@ -1,11 +1,11 @@
-import About from '@/components/About/About'
+import AboutPage from '@/pages/AboutPage/AboutPage'
 import React from 'react'
 
 type Props = {}
 
 const page = (props: Props) => {
     return (
-        <About />
+        <AboutPage />
     )
 }
 

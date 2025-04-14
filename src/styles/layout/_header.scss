@@ -74,4 +74,9 @@ header {
             background-color: $background-color_1;
         }
     }
+
+    &.bg-change {
+        background-color: rgba(53, 162, 44, 0.5) !important;
+        opacity: .0.8;
+    }
 }

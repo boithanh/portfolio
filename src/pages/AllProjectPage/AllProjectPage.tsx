@@ -1,22 +1,22 @@
-
+import AllProject from '@/components/AllProject/AllProject'
 import Footer from '@/components/Footer/Footer'
 import Header from '@/components/Header/Header'
-import ContactPage from '@/pages/ContactPage/ContactPage'
 import React from 'react'
 
-type Props = {}
+type Props = {
 
-const page = (props: Props) => {
+}
+
+const AllProjectPage = (props: Props) => {
     return (
         <>
             <Header />
             <main>
-                <ContactPage />
+                <AllProject />
             </main>
             <Footer />
         </>
-
     )
 }
 
-export default page
+export default AllProjectPage
