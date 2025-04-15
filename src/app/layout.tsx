@@ -36,10 +36,10 @@ export default function RootLayout({
         <meta name="twitter:title" content="Bối Thạnh's Portfolio" />
         <meta name="twitter:description" content="Frontend Developer & UI/UX Enthusiast" />
         <meta name="twitter:image" content="https://boithanh-dev.vercel.app/images/seo.jpg" />
-        <link rel="apple-touch-icon" sizes="100x100" href="/icons/icon-100x100.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/icons/icon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/icons/icon-16x16.png" />
-        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="apple-touch-icon" sizes="100x100" href="https://boithanh-dev.vercel.app/icons/icon-100x100.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="https://boithanh-dev.vercel.app/icons/icon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="https://boithanh-dev.vercel.app/icons/icon-16x16.png" />
+        <link rel="manifest" href="https://boithanh-dev.vercel.app/site.webmanifest" />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
