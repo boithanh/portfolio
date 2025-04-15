@@ -10,7 +10,7 @@ const AllProject = () => {
     return (
         <section className='all-project my-5'>
             <div className="container">
-                <div className="row justify-content-center">
+                <div className="row">
                     <div className="col-12 col-xl-12">
                         <div className="title mb-5 text-center">
                             <h2>All my Project</h2>

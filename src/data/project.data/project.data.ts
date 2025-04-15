@@ -46,6 +46,22 @@ export const items: stateType = {
             tabProject: "ReactJS",
             project: [
                 {
+                    projectImg: "/images/g7.jpg",
+                    projectTitle: "ReactJs Shoe Shop",
+                    projectSubTitle: "Exercise on using API to create shoe list",
+                    projectContent: "Technologies: React.js, scss. Call API to render list with Axios",
+                    projectLink: "https://baitap-reactjs-buoi-4.vercel.app/",
+                    projectSource: "https://github.com/boithanh/baitap-reactjs-buoi-4/tree/main"
+                },
+                {
+                    projectImg: "/images/g6.jpg",
+                    projectTitle: "ReactJs Glass",
+                    projectSubTitle: "An exercise on trying on glasses on a mannequin",
+                    projectContent: "Technologies: React.js, scss. Get familiar with state",
+                    projectLink: "baitap-reactjs-glass.vercel.app",
+                    projectSource: "https://github.com/boithanh/baitap-reactjs-buoi-2"
+                },
+                {
                     projectImg: "/images/g3.jpg",
                     projectTitle: "Capstone Fiver Clone",
                     projectSubTitle: "Freelance Marketplace for Hiring Services",

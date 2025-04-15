@@ -7,7 +7,7 @@
             width: 100%;
             min-height: 250px;
             object-fit: cover;
-            object-position: left;
+            object-position: center;
             border-radius: 12px 12px 0 0;
             height: auto;
         }
@@ -32,8 +32,6 @@
             color: $color_3;
             transition: all .5s;
         }
-
-
 
         &:hover {
             .project_item_text {

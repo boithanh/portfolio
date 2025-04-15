@@ -34,7 +34,7 @@ const BoiThanhProject = (props: Props) => {
                     role="tabpanel"
                     aria-labelledby={`pills-${checkVar(tabProject)}-tab`}
                 >
-                    <div className="row justify-content-center align-content-center">
+                    <div className="row">
                         {project.map((data, index) => (
                             < CardCustom key={index} projectImg={data.projectImg} projectContent={data.projectContent} projectTitle={data.projectTitle} projectSubTitle={data.projectSubTitle} projectLink={data.projectLink} projectSource={data?.projectSource} />
                         ))}
