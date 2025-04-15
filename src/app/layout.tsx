@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     siteName: "Thạnh's Portfolio",
     images: [
       {
-        url: "https://boithanh-dev.vercel.app/images/seo.jpg",
+        url: "https://cdn.jsdelivr.net/gh/boithanh/projectimg/uploads/seo.jpg",
         width: 1200,
         height: 630,
       },
@@ -35,13 +35,13 @@ export default function RootLayout({
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Bối Thạnh's Portfolio" />
         <meta name="twitter:description" content="Frontend Developer & UI/UX Enthusiast" />
-        <meta name="twitter:image" content="https://boithanh-dev.vercel.app/images/seo.jpg" />
+        <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/boithanh/projectimg/uploads/seo.jpg" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="application-name" content="BoiThanh" />
         <meta name="theme-color" content="#1e1e1e" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-title" content="BoiThanh" />
-        <link rel="apple-touch-icon" sizes="100x100" href="https://cdn.jsdelivr.net/gh/boithanh/projectimg/uploads/icon-100x100.png" />
+        <link rel="apple-touch-icon" sizes="200x200" href="https://cdn.jsdelivr.net/gh/boithanh/projectimg/uploads/icon200.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh//boithanh/projectimg/main/uploads/icon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/boithanh/projectimg/main/uploads/icon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
