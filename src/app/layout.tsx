@@ -1,7 +1,7 @@
+import type { Metadata } from "next";
 import "./globals.scss";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'animate.css';
-import type { Metadata } from "next";
 import SupportProvider from "@/redux/SupportProvider";
 
 
