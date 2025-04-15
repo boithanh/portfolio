@@ -1,0 +1,20 @@
+{
+    "name": "Bối Thạnh's Portfolio",
+    "short_name": "Thạnh Dev",
+    "start_url": "/",
+    "display": "fullscreen",
+    "background_color": "#ffffff",
+    "theme_color": "#35a22c",
+    "icons": [
+        {
+            "src": "/icons/icon-100x100.png",
+            "sizes": "100x100",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/icon-32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        }
+    ]
+}
