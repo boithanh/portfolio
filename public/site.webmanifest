@@ -7,12 +7,12 @@
     "theme_color": "#35a22c",
     "icons": [
         {
-            "src": "/icons/icon-100x100.png",
+            "src": "https://boithanh-dev.vercel.app/icons/icon-100x100.png",
             "sizes": "100x100",
             "type": "image/png"
         },
         {
-            "src": "/icons/icon-32x32.png",
+            "src": "https://boithanh-dev.vercel.app/icons/icon-32x32.png",
             "sizes": "32x32",
             "type": "image/png"
         }
