@@ -41,7 +41,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#1e1e1e" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-title" content="BoiThanh" />
-        <link rel="apple-touch-icon" sizes="200x200" href="https://cdn.jsdelivr.net/gh/boithanh/projectimg/uploads/icon200.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/boithanh/projectimg/uploads/icon200.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh//boithanh/projectimg/main/uploads/icon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/boithanh/projectimg/main/uploads/icon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
