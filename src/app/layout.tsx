@@ -36,13 +36,11 @@ export default function RootLayout({
         <meta name="twitter:title" content="Bối Thạnh's Portfolio" />
         <meta name="twitter:description" content="Frontend Developer & UI/UX Enthusiast" />
         <meta name="twitter:image" content="https://boithanh-dev.vercel.app/images/seo.jpg" />
-          <!-- Mobils App UI -->
-        <meta name="mobile-web-app-capable" content="yes">
-        <meta name="application-name" content="BoiThanh">
-        <meta name="theme-color" content="#1e1e1e">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-title" content="BoiThanh">
-          <!-- Mobils App UI -->
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="application-name" content="BoiThanh" />
+        <meta name="theme-color" content="#1e1e1e" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-title" content="BoiThanh" />
         <link rel="apple-touch-icon" sizes="100x100" href="https://cdn.jsdelivr.net/gh/boithanh/projectimg/uploads/icon-100x100.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh//boithanh/projectimg/main/uploads/icon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/boithanh/projectimg/main/uploads/icon-16x16.png" />
