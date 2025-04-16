@@ -14,6 +14,8 @@ type Props = {
 
 
 const CardCustom = ({ projectImg, projectLink, projectTitle, projectSubTitle, projectContent, projectSource }: Props) => {
+    console.log(projectTitle.includes("Capstone"));
+
     return (
         <div className="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
             <div className="project_item mb-5 animate__animated animate__zoomIn">
@@ -21,9 +23,10 @@ const CardCustom = ({ projectImg, projectLink, projectTitle, projectSubTitle, pr
                     <figure className="effect-winston">
                         <Image src={projectImg} width={350} height={256} priority alt='err' />
                         <figcaption>
+                            <h2 className={`badge ${projectTitle.includes("Capstone") ? "text-bg-danger" : "text-bg-dark"} `}>{projectTitle.includes("Capstone") ? "Capstone" : "Exercise"}</h2>
                             <p>
-                                <a href={projectLink} target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-cloud" /></a>
-                                <a href={projectSource} target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-github" /></a>
+                                {projectLink && <a href={projectLink} target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-cloud" /></a>}
+                                {projectSource && <a href={projectSource} target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-github" /></a>}
                                 <a href={"/contact"} target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-heart" /></a>
                             </p>
                         </figcaption>

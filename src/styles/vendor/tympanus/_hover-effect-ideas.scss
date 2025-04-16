@@ -115,8 +115,8 @@ figure.effect-winston figcaption::before {
 figure.effect-winston h2 {
     -webkit-transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
-    -webkit-transform: translate3d(0, 20px, 0);
-    transform: translate3d(0, 20px, 0);
+    -webkit-transform: translate3d(-25px, -35px, 0);
+    transform: translate3d(-25px, -35px, 0);
 }
 
 figure.effect-winston p {
