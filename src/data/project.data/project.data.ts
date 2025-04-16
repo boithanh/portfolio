@@ -58,7 +58,7 @@ export const items: stateType = {
                     projectTitle: "ReactJs Glass",
                     projectSubTitle: "An exercise on trying on glasses on a mannequin",
                     projectContent: "Technologies: React.js, scss. Get familiar with state",
-                    projectLink: "baitap-reactjs-glass.vercel.app",
+                    projectLink: "https://baitap-reactjs-glass.vercel.app",
                     projectSource: "https://github.com/boithanh/baitap-reactjs-buoi-2"
                 },
                 {

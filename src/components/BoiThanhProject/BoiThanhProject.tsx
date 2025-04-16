@@ -1,7 +1,7 @@
 import CardCustom from '@/hooks/cardCustom'
 import { RootState } from '@/redux/configStore'
 import { changeTab } from '@/redux/slices/projectSlice'
-import React, { ReactNode, useState } from 'react'
+import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
 type Props = {

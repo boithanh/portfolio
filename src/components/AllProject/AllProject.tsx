@@ -8,8 +8,8 @@ import CardCustom from '@/hooks/cardCustom'
 const AllProject = () => {
     const { items } = useSelector((state: RootState) => state.projectSlice);
     return (
-        <section className='all-project my-5'>
-            <div className="container">
+        <section className='all-project my-5 pt-5'>
+            <div className="container pt-5">
                 <div className="row">
                     <div className="col-12 col-xl-12">
                         <div className="title mb-5 text-center">

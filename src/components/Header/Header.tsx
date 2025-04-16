@@ -1,4 +1,5 @@
 'use client'
+import { loadBootstrap } from '@/utils/loadBoostrap'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React from 'react'
@@ -9,14 +10,17 @@ type Props = {
 const Header = (props: Props) => {
     const pathname = usePathname();
     const checkHeader = pathname === "/"
-    // console.log(checkHeader);
+
+    React.useEffect(() => {
+        loadBootstrap();
+    }, [])
     return (
-        <header className={`top-0 start-0 ${!checkHeader && "bg-change"} ${!checkHeader ? "position-relative" : "position-absolute"}`} style={{ "zIndex": 2, "width": "100%" }}>
+        <header className={`top-0 start-0 position-absolute ${!checkHeader && "bg-change"}`} style={{ "zIndex": 2, "width": "100%" }}>
             <nav className="navbar navbar-expand-lg navbar-dark py-3">
                 <div className="container">
                     <Link className="navbar-brand text-white d-flex align-items-center sm:d-block" href="/">
                         <i className="fa fa-dice-d20 text-success mx-2" />
-                        <span>Portfolio</span>
+                        <span className={`${!checkHeader && "text-black"}`}>Portfolio</span>
                     </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon" />

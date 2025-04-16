@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Header from '@/components/Header/Header';
 import Carousel from '@/components/Carousel/Carousel';
 import BoiThanhProject from '@/components/BoiThanhProject/BoiThanhProject';
@@ -8,8 +8,6 @@ import Branch from '@/components/Branch/Branch';
 import Footer from '@/components/Footer/Footer';
 import Entertainment from '@/components/Entertainment/Entertainment';
 import Extra from '@/components/Extra/Extra';
-
-
 
 type Props = {
 

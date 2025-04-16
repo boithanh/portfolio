@@ -53,9 +53,6 @@ header {
             sans-serif !important;
     }
 
-
-
-
     .navbar {
         i {
             font-size: 45px;
@@ -76,7 +73,16 @@ header {
     }
 
     &.bg-change {
-        background-color: rgba(53, 162, 44, 0.5) !important;
-        opacity: .0.8;
+        background-color: #cbeaa6 !important;
+
+        .nav-item {
+            .nav-link {
+                color: $background-color_4 !important;
+
+                &:hover {
+                    color: $color_6 !important;
+                }
+            }
+        }
     }
 }

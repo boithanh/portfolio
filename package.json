@@ -9,9 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fullpage/react-fullpage": "^0.1.45",
     "@reduxjs/toolkit": "^2.6.1",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.3.3",
+    "emailjs-com": "^3.2.0",
     "formik": "^2.4.6",
     "jquery": "^3.7.1",
     "lottie-react": "^2.4.1",
