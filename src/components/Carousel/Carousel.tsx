@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect } from 'react'
 import checkCarousel from '@/utils/utils';
 import Image from 'next/image';
 import { useSelector } from 'react-redux';
@@ -35,7 +35,7 @@ const Carousel = (props: Props) => {
                             return (
                                 <div className={`position-relative w-100 carousel-item vh-100 ${index === 0 ? 'active' : ""}`} key={index}>
                                     <div className="overlay" />
-                                    <Image src={`/images/${background}`} sizes='99vw' className='d-block w-100 vh-100 object-fit-cover' alt='err' fill priority />
+                                    <Image src={`/images/${background}`} className='d-block w-100 vh-100 object-fit-cover' alt={"err"} fill />
                                     <div className="carousel_content">
                                         <img src={`/images/${avatar}`} className='object-fit-cover animate__animated animate__fadeInUp' />
                                         <h1 className='animate__animated animate__fadeInUp animate__delay-1s'>{title}</h1>

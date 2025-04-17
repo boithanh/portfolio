@@ -36,7 +36,7 @@ const BoiThanhProject = (props: Props) => {
                 >
                     <div className="row">
                         {project.map((data, index) => (
-                            < CardCustom key={index} projectImg={data.projectImg} projectContent={data.projectContent} projectTitle={data.projectTitle} projectSubTitle={data.projectSubTitle} projectLink={data.projectLink} projectSource={data?.projectSource} />
+                            <CardCustom key={index} projectImg={data.projectImg} projectContent={data.projectContent} projectTitle={data.projectTitle} projectSubTitle={data.projectSubTitle} projectLink={data.projectLink} projectSource={data?.projectSource} maxLength={25} />
                         ))}
                     </div>
                 </div>

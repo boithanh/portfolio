@@ -1,14 +1,14 @@
 @use "./../helpers/variable" as *;
 
 .extra {
-    background: url("./../../assets/images/pexels-sam-lg-1666529.jpg");
+    background: url("./../../assets/images/pexels-jplenio-1690355.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    padding: 200px 50px;
+    padding: 100px 50px;
 
     @media screen and (max-width:431px) {
-        padding: 100px 10px;
+        padding: 50px 10px;
     }
 
     .title {

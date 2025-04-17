@@ -28,7 +28,7 @@ export const items: stateType = {
                 },
                 {
                     projectImg: "/images/g8.jpg",
-                    projectTitle: "Coffee & Tea",
+                    projectTitle: "Exercise Coffee & Tea",
                     projectSubTitle: "Only HTML",
                     projectContent: "An extremely simple exercise with only HTML",
                     projectSource: "https://github.com/boithanh/BCS12_bak/tree/master/buoi1/Extra/extra_coffee"
@@ -62,6 +62,27 @@ export const items: stateType = {
                     projectSource: "https://github.com/boithanh/BCS12_bak/tree/master/buoi23/Mastery"
                 },
                 {
+                    projectImg: "/images/g14.jpg",
+                    projectTitle: "Meipaly",
+                    projectSubTitle: "HTML, CSS",
+                    projectContent: "A template with the theme of website design, it started with the coutUp Js library to make the numbers more vivid.",
+                    projectSource: "https://github.com/boithanh/BCS12_bak/tree/master/buoi456/Meipaly"
+                },
+                {
+                    projectImg: "/images/g15.jpg",
+                    projectTitle: "Samar",
+                    projectSubTitle: "HTML, CSS",
+                    projectContent: "More and more css lines, combined with Backtotop Js library, count up Js, flatIcon create a unique design and smooth css effects",
+                    projectSource: "https://github.com/boithanh/BCS12_bak/tree/master/buoi456/Samar"
+                },
+                {
+                    projectImg: "/images/g16.jpg",
+                    projectTitle: "Portfolio",
+                    projectSubTitle: "HTML, CSS",
+                    projectContent: "This is a project that I see has color coordination and has its own style, I chose it as a template to write my own portfolio page, but with more technology when developing.",
+                    projectSource: "https://github.com/boithanh/BCS12_bak/tree/master/buoi78910/Portfolio"
+                },
+                {
                     projectImg: "/images/g1.jpg",
                     projectTitle: "Capstone Diner",
                     projectSubTitle: "Website for Online Food Ordering",
@@ -75,6 +96,34 @@ export const items: stateType = {
             tabProject: "Javascript",
             project: [
                 {
+                    projectImg: "/images/g17.jpg",
+                    projectTitle: "Exercise JS part 2",
+                    projectSubTitle: "Javascript is main language",
+                    projectContent: "Form exercises on calculating electricity bills, managing student admissions, calculating personal income tax, etc.",
+                    projectSource: "https://github.com/boithanh/baitap-js-buoi-5-banhboithanh-bcs12"
+                },
+                {
+                    projectImg: "/images/g18.jpg",
+                    projectTitle: "Exercise JS part 1",
+                    projectSubTitle: "Javascript is main language.",
+                    projectContent: "Form exercises on calculating employee salary, calculating average value, converting money, etc",
+                    projectSource: "https://github.com/boithanh/boithanh-baitap-js-buoi-2-3-banhboithanh-bcs12"
+                },
+                {
+                    projectImg: "/images/g19.jpg",
+                    projectTitle: "Exercise JS part 3",
+                    projectSubTitle: "Javascript is main language",
+                    projectContent: "Exercises on finding the last even number, finding the first prime number, swapping 2 numbers,etc",
+                    projectSource: "https://github.com/boithanh/baitap-js-buoi-7-8-banhboithanh-bcs12"
+                },
+                {
+                    projectImg: "/images/g20.jpg",
+                    projectTitle: "Exercise JS part 4",
+                    projectSubTitle: "Javascript is main language.",
+                    projectContent: "Exercises on employee management with operations on adding, deleting, editing employees and finding employees by code and name",
+                    projectSource: "https://github.com/boithanh/banhboithanh-bcs12-baitap-js-9-10"
+                },
+                {
                     projectImg: "/images/g2.jpg",
                     projectTitle: "Capstone Shoe",
                     projectSubTitle: "E-Commerce Platform for Selling Shoes",
@@ -82,28 +131,6 @@ export const items: stateType = {
                     projectLink: "https://capstone-shoe-ochre.vercel.app/",
                     projectSource: "https://github.com/boithanh/Capstone-Shoe"
                 },
-                {
-                    projectImg: "/images/g14.jpg",
-                    projectTitle: "Meipaly",
-                    projectSubTitle: "HTML, CSS and some rows JS code",
-                    projectContent: "A template with the theme of website design, it started with the coutUp Js library to make the numbers more vivid.",
-                    projectSource: "https://github.com/boithanh/BCS12_bak/tree/master/buoi456/Meipaly"
-                },
-                {
-                    projectImg: "/images/g15.jpg",
-                    projectTitle: "Samar",
-                    projectSubTitle: "HTML, CSS and JS code",
-                    projectContent: "More and more css lines, combined with Backtotop Js library, count up Js, flatIcon create a unique design and smooth css effects",
-                    projectSource: "https://github.com/boithanh/BCS12_bak/tree/master/buoi456/Samar"
-                }
-                ,
-                {
-                    projectImg: "/images/g16.jpg",
-                    projectTitle: "Portfolio",
-                    projectSubTitle: "HTML, CSS and more JS code",
-                    projectContent: "This is a project that I see has color coordination and has its own style, I chose it as a template to write my own portfolio page, but with more technology when developing.",
-                    projectSource: "https://github.com/boithanh/BCS12_bak/tree/master/buoi78910/Portfolio"
-                }
             ]
         },
         {
@@ -120,10 +147,18 @@ export const items: stateType = {
                 {
                     projectImg: "/images/g6.jpg",
                     projectTitle: "ReactJs Glass",
-                    projectSubTitle: "An exercise on trying on glasses on a mannequin",
+                    projectSubTitle: "Trying many glass on modern app",
                     projectContent: "Technologies: React.js, scss. Get familiar with state",
                     projectLink: "https://baitap-reactjs-glass.vercel.app",
                     projectSource: "https://github.com/boithanh/baitap-reactjs-buoi-2"
+                },
+                {
+                    projectImg: "/images/g20.jpg",
+                    projectTitle: "ReactJs Booking Ticket",
+                    projectSubTitle: "Application for booking ticket movie ",
+                    projectContent: "Technologies: React.js, Ant layout, taiwindCss, building source with vite framework. This app help booking, payment and cancellation of tickets if no longer needed",
+                    projectLink: "https://baitap-reactjs-glass.vercel.app",
+                    projectSource: "https://github.com/boithanh/baitap-reactjs-buoi-6"
                 },
                 {
                     projectImg: "/images/g3.jpg",
