@@ -21,7 +21,7 @@ const AllProject = () => {
                             return (
                                 item.project.map((data) => {
                                     return (
-                                        <CardCustom key={data.projectTitle} projectImg={data.projectImg} projectContent={data.projectContent} projectTitle={data.projectTitle} projectSubTitle={data.projectSubTitle} projectLink={data.projectLink} projectSource={data?.projectSource} />
+                                        <CardCustom key={data.projectTitle} projectImg={data.projectImg} projectContent={data.projectContent} projectTitle={data.projectTitle} projectSubTitle={data.projectSubTitle} projectLink={data.projectLink} projectSource={data?.projectSource} maxLength={15} />
                                     )
                                 })
                             )

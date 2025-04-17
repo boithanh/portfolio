@@ -19,6 +19,7 @@ const CardCustom = ({ projectImg, projectLink, projectTitle, projectSubTitle, pr
     const [expanded, setExpanded] = useState(false);
     const isTruncated = projectContent.length > maxLength;
     const displayText = isTruncated && !expanded ? projectContent.slice(0, maxLength) + (isTruncated ? '...' : '') : projectContent
+
     function titleCheck(pr = projectTitle, sub = projectSubTitle) {
         if (pr.includes("Capstone")) {
             return <h2>Cap<span>stone</span></h2>
@@ -36,7 +37,11 @@ const CardCustom = ({ projectImg, projectLink, projectTitle, projectSubTitle, pr
             <div className="project_item mb-5 animate__animated animate__zoomIn">
                 <div className="grid">
                     <figure className="effect-winston" style={{ width: '100%', aspectRatio: '350 / 256' }}>
-                        <Image src={projectImg} placeholder="blur" blurDataURL={projectImg} alt='err' fill />
+                        <Image src={projectImg} placeholder="blur" quality={100} sizes="(max-width: 430px) 90vw,
+       (max-width: 768px) 50vw,
+       (max-width: 1280px) 33vw,
+       (max-width: 1920px) 25vw,
+       33vw" blurDataURL={projectImg} alt='err' fill />
                         <figcaption>
                             {titleCheck()}
                             <p>
