@@ -8,6 +8,7 @@ import Branch from '@/components/Branch/Branch';
 import Footer from '@/components/Footer/Footer';
 import Entertainment from '@/components/Entertainment/Entertainment';
 import Extra from '@/components/Extra/Extra';
+import CTA from '@/components/CTA/CTA';
 
 type Props = {
 
@@ -20,9 +21,10 @@ const HomeTemplate = (props: Props) => {
             <main>
                 <Carousel />
                 <BoiThanhProject />
-                <Extra />
+                <CTA />
                 <Available />
                 <Branch />
+                <Extra />
                 <Entertainment />
             </main>
             <Footer />

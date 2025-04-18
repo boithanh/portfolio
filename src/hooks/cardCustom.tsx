@@ -36,12 +36,8 @@ const CardCustom = ({ projectImg, projectLink, projectTitle, projectSubTitle, pr
         <div className="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
             <div className="project_item mb-5 animate__animated animate__zoomIn">
                 <div className="grid">
-                    <figure className="effect-winston" style={{ width: '100%', aspectRatio: '350 / 256' }}>
-                        <Image src={projectImg} placeholder="blur" quality={100} sizes="(max-width: 430px) 90vw,
-       (max-width: 768px) 50vw,
-       (max-width: 1280px) 33vw,
-       (max-width: 1920px) 25vw,
-       33vw" blurDataURL={projectImg} alt='err' fill />
+                    <figure className="effect-winston" style={{ width: '100%', aspectRatio: '350 / 250', position: 'relative' }}>
+                        <Image src={projectImg} placeholder="blur" quality={100} sizes="99vw" blurDataURL={projectImg} alt='err' fill />
                         <figcaption>
                             {titleCheck()}
                             <p>

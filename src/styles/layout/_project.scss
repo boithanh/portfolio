@@ -2,12 +2,13 @@
 
 .cyber_project,
 .all-project {
+    background-color: $background-color_9;
+
     .project_item {
         img {
             width: 100%;
-            min-height: 250px;
             object-fit: cover;
-            object-position: center;
+            object-position: bottom center;
             border-radius: 12px 12px 0 0;
             height: auto;
         }

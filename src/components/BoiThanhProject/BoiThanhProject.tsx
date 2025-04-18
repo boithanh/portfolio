@@ -57,7 +57,7 @@ const BoiThanhProject = (props: Props) => {
         }
     }
     return (
-        <section className="cyber_project my-5">
+        <section className="cyber_project py-5">
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="cyber_project_title title mb-3">
@@ -78,7 +78,6 @@ const BoiThanhProject = (props: Props) => {
                             {
                                 renderItem()
                             }
-
                         </div>
                     </div>
                 </div>
