@@ -9,7 +9,6 @@ import Footer from '@/components/Footer/Footer';
 import Entertainment from '@/components/Entertainment/Entertainment';
 import Extra from '@/components/Extra/Extra';
 import CTA from '@/components/CTA/CTA';
-
 type Props = {
 
 }

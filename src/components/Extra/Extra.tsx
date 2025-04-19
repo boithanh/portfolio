@@ -1,5 +1,11 @@
 import React from 'react'
-
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, EffectCards, EffectCoverflow, EffectCreative, EffectCube, EffectFade, EffectFlip, Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import "swiper/css/bundle"
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import Image from 'next/image';
 type Props = {}
 
 const Extra = (props: Props) => {
@@ -18,7 +24,28 @@ const Extra = (props: Props) => {
                         </div>
                     </div>
                     <div className='col-sm-12 col-xl-8 z-1'>
-                        <div className='img-content'></div>
+
+                        <Swiper
+                            modules={[Navigation, Pagination, Autoplay, EffectCreative, EffectCards, EffectCube, EffectFade, EffectFlip, EffectCoverflow]}
+                            spaceBetween={0}
+                            slidesPerView={1}
+                            navigation
+                            pagination={{ clickable: true }} // Hiển thị chấm điều hướng
+                            effect='cube'
+                            loop={true} // Lặp vô hạn
+                            className="mySwiper"
+                        >
+                            <SwiperSlide>
+                                <div className='img-content'>
+                                    <Image src="/images/extra.jpg" sizes="(max-width: 1200px) 100vw, 71vw" alt='err' fill />
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className='img-content'>
+                                    <Image src="/images/extra2.jpg" sizes="(max-width: 1200px) 100vw, 71vw" alt='err' fill />
+                                </div>
+                            </SwiperSlide>
+                        </Swiper>
                     </div>
                 </div>
             </div>

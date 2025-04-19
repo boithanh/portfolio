@@ -29,16 +29,18 @@
     }
 
     .img-content {
-        background-image: url("./../../assets/images/extra.jpg");
-        background-size: cover;
         width: 100%;
-        height: auto;
-        min-height: 400px;
+        height: 100%;
+        aspect-ratio: 736 / 414;
+        position: relative;
 
-        @media screen and (max-width:431px) {
-            background-position: center;
-            background-size: contain;
-            min-height: 199px;
+        @media screen and (max-width: 431px) {
+            aspect-ratio: 1 / 1;
+        }
+
+        img {
+            object-fit: cover;
+            object-position: top;
         }
     }
 }
