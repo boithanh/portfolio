@@ -37,12 +37,32 @@ const Extra = (props: Props) => {
                         >
                             <SwiperSlide>
                                 <div className='img-content'>
-                                    <Image src="/images/extra.jpg" sizes="(max-width: 1200px) 100vw, 71vw" alt='err' fill />
+                                    <Image src="/images/blood-pressure-funny.png" sizes="(max-width: 1200px) 100vw, 71vw" alt='err' fill />
+                                    <span className='badge bg-black position-absolute mt-1 ms-1'>App check các thông số đo huyết áp</span>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className='img-content'>
-                                    <Image src="/images/extra2.jpg" sizes="(max-width: 1200px) 100vw, 71vw" alt='err' fill />
+                                    <Image src="/images/lottery_1.png" sizes="(max-width: 1200px) 100vw, 71vw" alt='err' fill />
+                                    <span className='badge bg-black position-absolute mt-1 ms-1'>App Random vé số kiến thiết ngẫu nhiên</span>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className='img-content'>
+                                    <Image src="/images/lottery_2.png" sizes="(max-width: 1200px) 100vw, 71vw" alt='err' fill />
+                                    <span className='badge bg-black position-absolute mt-1 ms-1'>App Random số mega 6/45 ngẫu nhiên</span>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className='img-content'>
+                                    <Image src="/images/lottery_3.png" sizes="(max-width: 1200px) 100vw, 71vw" alt='err' fill />
+                                    <span className='badge bg-black position-absolute mt-1 ms-1'>App Random số mega 6/55 ngẫu nhiên</span>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className='img-content'>
+                                    <Image src="/images/extra.jpg" sizes="(max-width: 1200px) 100vw, 71vw" alt='err' fill style={{ objectPosition: "top" }} />
+                                    <a className='btn btn-light position-absolute ' href="http://kechuyentamlinh.vercel.app/">Get Go ^^</a>
                                 </div>
                             </SwiperSlide>
                         </Swiper>
