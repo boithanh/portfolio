@@ -158,7 +158,6 @@ export const items: stateType = {
                     projectTitle: "ReactJs Booking Ticket",
                     projectSubTitle: "Application for booking ticket movie ",
                     projectContent: "Technologies: React.js, Ant layout, taiwindCss, building source with vite framework. This app help booking, payment and cancellation of tickets if no longer needed",
-                    projectLink: "https://baitap-reactjs-glass.vercel.app",
                     projectSource: "https://github.com/boithanh/baitap-reactjs-buoi-6"
                 },
                 {
