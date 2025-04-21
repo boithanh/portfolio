@@ -10,6 +10,7 @@ type Props = {
 const Header = (props: Props) => {
     const pathname = usePathname();
     const checkHeader = pathname === "/"
+    const arrNavLink = ["/", "/About", "/Projects", "/Contact"]
 
     React.useEffect(() => {
         loadBootstrap();
@@ -27,17 +28,13 @@ const Header = (props: Props) => {
                     </button>
                     <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul className="navbar-nav mr-auto mb-2 mb-lg-0">
-                            <li className="nav-item active">
-                                <Link href={"/"} className='nav-link mx-2 mb-1 text-white position-relative' aria-current={"page"} >Home</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link href={"/about"} className='nav-link mx-2 mb-1 text-white position-relative' aria-current={"page"} >About</Link>                           </li>
-                            <li className="nav-item">
-                                <Link href={"/projects"} className='nav-link mx-2 mb-1 text-white position-relative' aria-current={"page"} >Projects</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link href={"/contact"} className='nav-link mx-2 mb-1 text-white position-relative' aria-current={"page"} >Contact</Link>
-                            </li>
+                            {arrNavLink.map((item, index) => {
+                                return (
+                                    <li key={index} className={`nav-item ${pathname === item.toLowerCase() ? "active" : ""}`}>
+                                        <Link href={item.toLowerCase()} className={`nav-link mx-2 mb-1 position-relative`} aria-current={"page"}>{item.replace("/", "") || "Home"}</Link>
+                                    </li>
+                                )
+                            })}
                         </ul>
                     </div>
                 </div>

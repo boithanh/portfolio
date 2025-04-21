@@ -1,6 +1,7 @@
 'use client';
 import { Button } from 'bootstrap';
 import Image from 'next/image'
+import Link from 'next/link';
 import React, { useState } from 'react'
 
 type Props = {
@@ -43,7 +44,7 @@ const CardCustom = ({ projectImg, projectLink, projectTitle, projectSubTitle, pr
                             <p>
                                 {projectLink && <a href={projectLink} target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-cloud" /></a>}
                                 {projectSource && <a href={projectSource} target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-github" /></a>}
-                                <a href={"/contact"} target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-heart" /></a>
+                                <Link href={"/contact"}><i className="fa-solid fa-heart" /></Link>
                             </p>
                         </figcaption>
                     </figure>

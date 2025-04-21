@@ -2,6 +2,9 @@
 
 header {
     .nav-item {
+        .nav-link {
+            color: $color_1 ;
+        }
 
         &.active {
             .nav-link {
@@ -9,6 +12,10 @@ header {
             }
 
             &::after {
+                width: 100%;
+            }
+
+            &::before {
                 width: 100%;
             }
         }
@@ -77,10 +84,10 @@ header {
 
         .nav-item {
             .nav-link {
-                color: $background-color_4 !important;
+                color: $background-color_4;
 
                 &:hover {
-                    color: $color_6 !important;
+                    color: $color_6;
                 }
             }
         }
