@@ -38,14 +38,16 @@ export const items: stateType = {
                     projectTitle: "Camping",
                     projectSubTitle: "HTML with CSS style sheet",
                     projectContent: "Camping always makes us excited and full of energy.",
-                    projectSource: "https://github.com/boithanh/BCS12_bak/tree/master/buoi23/Camping"
+                    projectSource: "https://github.com/boithanh/BCS12_bak/tree/master/buoi23/Camping",
+                    projectLink: "https://camping-thanhbb.vercel.app/"
                 },
                 {
                     projectImg: "/images/g11.jpg",
                     projectTitle: "Anipad",
                     projectSubTitle: "HTML with CSS style sheet",
                     projectContent: "Pets are so cute and adorables",
-                    projectSource: "https://github.com/boithanh/BCS12_bak/tree/master/buoi23/Extra/Anipat"
+                    projectSource: "https://github.com/boithanh/BCS12_bak/tree/master/buoi23/Extra/Anipat",
+                    projectLink: "https://anipat-thanhbb.vercel.app/"
                 },
                 {
                     projectImg: "/images/g12.jpg",
@@ -87,8 +89,8 @@ export const items: stateType = {
                     projectTitle: "Capstone Diner",
                     projectSubTitle: "Website for Online Food Ordering",
                     projectContent: " Technologies: HTML, CSS, Bootstrap framework. This project demonstrates a fully responsive website for ordering food online, featuring an interactive menu and checkout system.",
-                    projectLink: "http://capstone-diner-sigma.vercel.app/",
-                    projectSource: "https://github.com/NQTuoG/Capstone_Diner"
+                    projectLink: "https://capstonediner-thanhbb.vercel.app/",
+                    projectSource: "https://github.com/boithanh/capstone-diner"
                 }
             ]
         },
@@ -117,7 +119,7 @@ export const items: stateType = {
                     projectSource: "https://github.com/boithanh/baitap-js-buoi-7-8-banhboithanh-bcs12"
                 },
                 {
-                    projectImg: "/images/g20.jpg",
+                    projectImg: "/images/g21.jpg",
                     projectTitle: "Exercise JS part 4",
                     projectSubTitle: "Javascript is main language.",
                     projectContent: "Exercises on employee management with operations on adding, deleting, editing employees and finding employees by code and name",
@@ -128,7 +130,7 @@ export const items: stateType = {
                     projectTitle: "Capstone Shoe",
                     projectSubTitle: "E-Commerce Platform for Selling Shoes",
                     projectContent: "Designed with Vanila js, Tailwind CSS with data response from restful API, this project showcases a clean, modern UI with user-friendly navigation, responsive layout, and an intuitive shopping experience.",
-                    projectLink: "https://capstone-shoe-ochre.vercel.app/",
+                    projectLink: "https://capstoneshoe-thanhbb.vercel.app/",
                     projectSource: "https://github.com/boithanh/Capstone-Shoe"
                 },
             ]
@@ -141,7 +143,6 @@ export const items: stateType = {
                     projectTitle: "ReactJs Shoe Shop",
                     projectSubTitle: "Exercise on using API to create shoe list",
                     projectContent: "Technologies: React.js, scss. Call API to render list with Axios",
-                    projectLink: "https://baitap-reactjs-buoi-4.vercel.app/",
                     projectSource: "https://github.com/boithanh/baitap-reactjs-buoi-4/tree/main"
                 },
                 {
@@ -165,15 +166,15 @@ export const items: stateType = {
                     projectTitle: "Capstone Fiver Clone",
                     projectSubTitle: "Freelance Marketplace for Hiring Services",
                     projectContent: "Technologies: React.js, Tailwind CSS, building a platform similar to Fiverr for freelancers to offer services and clients to hire.",
-                    projectLink: "https://react-fiverr-two.vercel.app/",
-                    projectSource: "https://github.com/Torungu/react-fiverr"
+                    projectLink: "https://capstonefiver-thanhbb.vercel.app/",
+                    projectSource: "https://github.com/boithanh/capstone-fiverr"
                 },
                 {
                     projectImg: "/images/g4.jpg",
                     projectTitle: "Capstone Elearning",
                     projectSubTitle: "A Polished UI for Online Learning",
                     projectContent: "Built with React.js, Tailwind CSS, Ant design, this project features a visually appealing, organized interface, ensuring smooth user interaction for course browsing and content management.",
-                    projectLink: "https://capstone-elearning-henna.vercel.app/",
+                    projectLink: "https://capstone-elearning-thanhbb.vercel.app/",
                     projectSource: "https://github.com/boithanh/Capstone-Elearning"
                 },
             ]
