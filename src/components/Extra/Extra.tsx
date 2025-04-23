@@ -20,7 +20,7 @@ const Extra = (props: Props) => {
                             <p className='mb-4'>This is a collection of spontaneous mini-projects sparked by random moments of inspiration. Whenever an idea hits me—often in the middle of doing something else—I bring it to life through visuals that dance in my head and turn them into real interfaces</p>
                         </div>
                         <div className='mb-5'>
-                            <a href="https://tien-ich-nho.vercel.app/" className='btn btn-outline-light w-100' target="_blank" rel="noopener noreferrer">View Detail</a>
+                            <a href="https://tienichnho.vercel.app/" className='btn btn-outline-light w-100' target="_blank" rel="noopener noreferrer">View Detail</a>
                         </div>
                     </div>
                     <div className='col-sm-12 col-xl-8 z-1'>
