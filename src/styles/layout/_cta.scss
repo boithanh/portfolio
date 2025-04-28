@@ -84,18 +84,22 @@
 @keyframes loader {
     0% {
         rotate: 0deg;
+        opacity: 1;
     }
 
     25% {
         rotate: 80deg;
+        opacity: 0.5;
     }
 
     50% {
-        rotate: -160deg;
+        rotate: 40deg;
+        opacity: 0.1;
 
     }
 
     100% {
-        rotate: 160deg;
+        rotate: 0deg;
+        opacity: 0.7;
     }
 }

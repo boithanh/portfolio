@@ -4,7 +4,8 @@ type availableState = {
     available: {
         icon: string,
         subTitle: string,
-        subContent: string
+        subContent: string,
+        devIcon?: string[],
     }[]
 }
 
@@ -15,12 +16,44 @@ export const available = {
         {
             icon: "fa-solid fa-gear",
             subTitle: "Technical Skills",
-            subContent: "HTML, CSS, JavaScript/TypeScript, PHP, C++, React.js, Next.js, Tailwind, Bootstrap, Ant Design, Flowbite, Node.js, Laravel, PostgreSQL, MySQL, MariaDB, MongoDB"
+            subContent: "C++, Ant Design, Flowbite, MariaDB.",
+            devIcon: [
+                "JavaScript.svg",
+                "HTML.svg",
+                "CSS.svg",
+                "Sass.svg",
+                "React-Light.svg",
+                "NextJS-Light.svg",
+                "Bootstrap.svg",
+                "TailwindCSS-Light.svg",
+                "NodeJS-Light.svg",
+                "Laravel-Light.svg",
+                "PHP-Light.svg",
+                "MongoDB.svg",
+                "MySQL-Light.svg",
+                "PostgreSQL-Light.svg",
+                "Wordpress.svg",
+                "Redux.svg"
+            ]
         },
         {
             icon: "fa-solid fa-square-plus",
-            subTitle: "Other Expanded Skills",
-            subContent: "Responsive design, Postman (API Testing), Version Control with GIT (GitHub), Project Management with Jira, MS Planner."
+            subTitle: "Expanded Skills",
+            subContent: "Responsive design, Project Management with Jira, MS Planner, Office, Technical support, Help Desk, testing app",
+            devIcon: [
+                "Git.svg",
+                "Github-Light.svg",
+                "Postman.svg",
+                "Vite-Light.svg",
+                "VSCode-Light.svg",
+                "Windows-Light.svg",
+                "Ubuntu-Light.svg",
+                "Mint-Light.svg",
+                "Powershell-Light.svg",
+                "CodePen-Light.svg",
+                "GitLab-Light.svg",
+                "Gmail-Light.svg"
+            ]
 
         },
         {

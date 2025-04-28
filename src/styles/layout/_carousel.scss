@@ -1,8 +1,20 @@
 @use "./../helpers/variable" as *;
 
-.cyber_carousel {
-    .carousel-indicators {
+.cyber_carousel,
+.swiper-carousel {
+
+    .carousel-indicators,
+    .swiper-pagination-bullet {
+        height: 13px !important;
+        width: 13px !important;
+        border: none !important;
+        border-radius: 50% !important;
+
         .active {
+            background-color: $background-color_6 !important;
+        }
+
+        &.swiper-pagination-bullet-active {
             background-color: $background-color_6 !important;
         }
 

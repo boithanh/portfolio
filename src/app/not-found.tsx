@@ -1,11 +1,11 @@
-import PageNotFound from '@/components/PageNotFound/PageNotFound';
-import React from 'react'
+import React, { Suspense } from 'react'
+const PageNotFound = React.lazy(() => import("@/components/PageNotFound/PageNotFound"))
 
 type Props = {}
 
 const NotFound = (props: Props) => {
     return <div>
-        <PageNotFound />
+        <Suspense><PageNotFound /></Suspense>
     </div>
 }
 

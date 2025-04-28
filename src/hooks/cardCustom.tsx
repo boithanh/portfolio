@@ -1,5 +1,4 @@
 'use client';
-import { Button } from 'bootstrap';
 import Image from 'next/image'
 import Link from 'next/link';
 import React, { useState } from 'react'
@@ -38,7 +37,7 @@ const CardCustom = ({ projectImg, projectLink, projectTitle, projectSubTitle, pr
             <div className="project_item mb-5 animate__animated animate__zoomIn">
                 <div className="grid">
                     <figure className="effect-winston" style={{ width: '100%', aspectRatio: '350 / 250', position: 'relative' }}>
-                        <Image src={projectImg} placeholder="blur" quality={100} sizes="99vw" blurDataURL={projectImg} alt='err' fill />
+                        <Image src={projectImg} placeholder="blur" quality={100} sizes="(max-width: 431px) 81vw (max-width: 768px) 46vw (min-width: 1200px) 31vw, 90vw" blurDataURL={projectImg} alt='err' fill />
                         <figcaption>
                             {titleCheck()}
                             <p>
