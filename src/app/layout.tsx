@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://cdn.jsdelivr.net/gh/boithanh/projectimg/uploads/seo.jpg",
-        width: 1200,
+        width: 1485,
         height: 630,
       },
     ],
@@ -32,19 +32,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Bối Thạnh's Portfolio" />
         <meta name="twitter:description" content="Frontend Developer & UI/UX Enthusiast" />
         <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/boithanh/projectimg/uploads/seo.jpg" />
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="application-name" content="BoiThanh" />
-        <meta name="theme-color" content="#1e1e1e" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-title" content="BoiThanh" />
-        <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/boithanh/projectimg/uploads/icon200.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh//boithanh/projectimg/main/uploads/icon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/boithanh/projectimg/main/uploads/icon-16x16.png" />
-        <link rel="manifest" href="/site.webmanifest" />
+        <meta property="og:image" content="https://cdn.jsdelivr.net/gh/boithanh/projectimg/uploads/seo.jpg" />
+        <meta property="og:image:width" content="1485" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="Bối Thạnh's Portfolio" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Bối Thạnh's Portfolio" />
+        <meta property="og:description" content="Frontend Developer & UI/UX Enthusiast" />
+        <meta property="og:url" content="https://boithanh-dev.vercel.app/" />
+        <meta name="apple-mobile-web-app-title" content="Bối Thạnh" />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
