@@ -1,6 +1,11 @@
 {
   "name": "Bối Thạnh's portfolio",
-  "short_name": "B.Thạnh",
+  "short_name": "Bối Thạnh",
+  "start_url": "/",
+  "display": "fullscreen",
+  "theme_color": "#566D5D",
+  "background_color": "#B1CAA2",
+  "orientation": "portrait",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
@@ -14,8 +19,5 @@
       "type": "image/png",
       "purpose": "maskable"
     }
-  ],
-  "theme_color": "#566D5D",
-  "background_color": "#B1CAA2",
-  "display": "standalone"
+  ]
 }
