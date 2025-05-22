@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     siteName: "Thạnh's Portfolio",
     images: [
       {
-        url: "https://boithanh-dev.vercel.app/web-app-manifest-512x512.png",
+        url: "https://boithanh-dev.vercel.app/manifest-512x512",
         width: 512,
         height: 512,
       },
