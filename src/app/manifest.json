@@ -3,8 +3,8 @@
   "short_name": "Bối Thạnh",
   "start_url": "/",
   "display": "fullscreen",
-  "theme_color": "#566D5D",
-  "background_color": "#B1CAA2",
+  "theme_color": "#00000",
+  "background_color": "#00000",
   "orientation": "portrait",
   "icons": [
     {
