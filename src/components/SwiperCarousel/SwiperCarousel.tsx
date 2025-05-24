@@ -2,27 +2,34 @@ import { RootState } from '@/redux/configStore';
 import Image from 'next/image';
 import React from 'react'
 import { useSelector } from 'react-redux';
+import { SwiperModule } from 'swiper/types';
 
 type Props = {
     Swiper: any,
     SwiperSlide: any,
     Pagination: object,
-    Autoplay: object
+    Autoplay: object,
+    EffectFade: SwiperModule,
+    EffectCards: SwiperModule,
+    EffectFlip: SwiperModule
 }
 
-const SwiperCarousel = ({ Swiper, SwiperSlide, Pagination, Autoplay }: Props) => {
+const SwiperCarousel = ({ Swiper, SwiperSlide, Pagination, Autoplay, EffectFade, EffectCards, EffectFlip }: Props) => {
     const carouselData = useSelector((state: RootState) => state.carouselSlice);
     return (
         <section className='swiper-carousel'>
             <Swiper
-                modules={[Pagination, Autoplay]}
+                modules={[Pagination, Autoplay, EffectFade, EffectCards, EffectFlip]}
                 spaceBetween={0}
                 slidesPerView={1}
                 pagination={{ clickable: true }} // Hiển thị chấm điều hướng
-                effect='slide'
+                effect='fade' // Hiệu ứng chuyển đổi
+                fadeEffect={
+                    { crossFade: true }
+                }
                 loop={true} // Lặp vô hạn
                 className="mySwiper"
-                autoplay={{ delay: 5000 }}
+                autoplay={{ delay: 8000 }}
             >
                 {
                     carouselData.map((item, index) => {

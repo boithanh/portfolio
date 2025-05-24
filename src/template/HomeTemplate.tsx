@@ -25,7 +25,7 @@ const HomeTemplate = (props: Props) => {
         <>
             <Header />
             <main>
-                <SwiperCarousel Swiper={Swiper} SwiperSlide={SwiperSlide} Autoplay={Autoplay} Pagination={Pagination} />
+                <SwiperCarousel Swiper={Swiper} SwiperSlide={SwiperSlide} Autoplay={Autoplay} Pagination={Pagination} EffectFade={EffectFade} EffectCards={EffectCards} EffectFlip={EffectFlip} />
                 <BoiThanhProject />
                 <CTA />
                 <Available />
