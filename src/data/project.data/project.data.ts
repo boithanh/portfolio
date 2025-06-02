@@ -20,13 +20,6 @@ export const items: stateType = {
             tabProject: "HTML + CSS",
             project: [
                 {
-                    projectImg: "/images/g9.jpg",
-                    projectTitle: "Exercise layout KFC",
-                    projectSubTitle: "Only HTML",
-                    projectContent: "One of the first exercises i was exposed to html",
-                    projectSource: "https://github.com/boithanh/BCS12_bak/tree/master/buoi1/KFC"
-                },
-                {
                     projectImg: "/images/g8.jpg",
                     projectTitle: "Exercise Coffee & Tea",
                     projectSubTitle: "Only HTML",
@@ -97,6 +90,14 @@ export const items: stateType = {
         {
             tabProject: "Javascript",
             project: [
+                {
+                    projectImg: "/images/seo2.jpg",
+                    projectTitle: "Thạnh's ITSUPPORT Profile",
+                    projectSubTitle: "VanilaJs building with vite & taiwindCss",
+                    projectContent: "A clean and focused portfolio showcasing my journey and skills in IT Help Desk and technical support.",
+                    projectSource: "https://github.com/boithanh/portfolioItSupport.git",
+                    projectLink: "https://boithanh-itsupport.vercel.app/",
+                },
                 {
                     projectImg: "/images/g17.jpg",
                     projectTitle: "Exercise JS part 2",
