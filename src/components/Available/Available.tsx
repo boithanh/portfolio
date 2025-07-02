@@ -8,7 +8,7 @@ type Props = {}
 const Available = (props: Props) => {
     const { title, content, available } = useSelector((state: RootState) => state.availableSlice);
     return (
-        <section className="cyber_available mb-5">
+        <section className="cyber_available">
             <div className="container position-relative">
                 <div className="cyber_avai_title title">
                     <h2>{title}</h2>
@@ -28,14 +28,14 @@ const Available = (props: Props) => {
                                             {
                                                 devIcon?.map((item, index) => {
                                                     return (
-                                                        <>
+                                                        <span key={index}>
                                                             <Image
                                                                 width={25}
                                                                 height={25}
-                                                                key={index} src={`/icons/${item}`} alt="err"
+                                                                src={`/icons/${item}`} alt="err"
                                                                 className='pb-1' />
                                                             <span> , </span>
-                                                        </>
+                                                        </span>
                                                     )
                                                 })
                                             }

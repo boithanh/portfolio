@@ -15,6 +15,7 @@ const Entertainment = React.lazy(() => import("@/components/Entertainment/Entert
 // import Extra from '@/components/Extra/Extra';
 import CTA from '@/components/CTA/CTA';
 import SwiperCarousel from '@/components/SwiperCarousel/SwiperCarousel';
+import Carousel from '@/components/Carousel/Carousel';
 const Extra = React.lazy(() => import("@/components/Extra/Extra"));
 type Props = {
 
@@ -25,10 +26,11 @@ const HomeTemplate = (props: Props) => {
         <>
             <Header />
             <main>
-                <SwiperCarousel Swiper={Swiper} SwiperSlide={SwiperSlide} Autoplay={Autoplay} Pagination={Pagination} EffectFade={EffectFade} EffectCards={EffectCards} EffectFlip={EffectFlip} />
+                <Suspense fallback={<Skeleton active />}><Carousel /></Suspense>
+                {/* <SwiperCarousel Swiper={Swiper} SwiperSlide={SwiperSlide} Autoplay={Autoplay} Pagination={Pagination} EffectFade={EffectFade} EffectCards={EffectCards} EffectFlip={EffectFlip} /> */}
                 <BoiThanhProject />
-                <CTA />
                 <Available />
+                <CTA />
                 <Suspense fallback={<Skeleton active />}><Branch /></Suspense>
                 <Suspense fallback={<Skeleton active />}><Extra Swiper={Swiper} SwiperSlide={SwiperSlide} Navigation={Navigation} EffectCube={EffectCube} /></Suspense>
                 <Suspense fallback={<Skeleton active />}><Entertainment /></Suspense>

@@ -9,14 +9,14 @@ type availableState = {
     }[]
 }
 
-export const available = {
+export const available: availableState = {
     title: "💼 Available for full-time opportunities",
     content: "I’m a passionate front-end developer who enjoys turning ideas into interactive experiences",
     available: [
         {
             icon: "fa-solid fa-gear",
             subTitle: "Technical Skills",
-            subContent: "C++, Ant Design, Flowbite, MariaDB.",
+            subContent: ", C++, Ant Design, Flowbite, MariaDB.",
             devIcon: [
                 "JavaScript.svg",
                 "HTML.svg",
@@ -39,7 +39,7 @@ export const available = {
         {
             icon: "fa-solid fa-square-plus",
             subTitle: "Expanded Skills",
-            subContent: "Responsive design, Project Management with Jira, MS Planner, Office, Technical support, Help Desk, testing app",
+            subContent: ", responsive design, Project Management with Jira, MS Planner, Office, Technical support, Help Desk, testing app",
             devIcon: [
                 "Git.svg",
                 "Github-Light.svg",
@@ -59,7 +59,7 @@ export const available = {
         {
             icon: "fa-solid fa-book",
             subTitle: "Soft Skills",
-            subContent: "Communication, Teamwork, Problem-solving."
+            subContent: ", communication, Teamwork, Problem-solving."
         }
     ]
 

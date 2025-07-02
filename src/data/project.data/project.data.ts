@@ -191,7 +191,21 @@ export const items: stateType = {
                     projectSource: "https://github.com/boithanh/portfolio"
                 }
             ]
+        },
+        {
+            tabProject: "React Native",
+            project: [
+                {
+                    projectImg: "/images/pexels-iriser-1408221.jpg",
+                    projectTitle: "Review app",
+                    projectSubTitle: "Building with expo",
+                    projectContent: "My first React native project",
+                    projectLink: "https://drive.google.com/file/d/10jTHS1V7nkyJCz0bz9ewFB8hnzobnLs5/view?usp=sharing",
+                    projectSource: "https://github.com/boithanh/todoapp/tree/dev"
+                }
+            ]
         }
+
     ],
     currentTab: "HTML + CSS"
 }
