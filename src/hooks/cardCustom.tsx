@@ -25,7 +25,7 @@ const CardCustom = ({ projectImg, projectLink, projectTitle, projectSubTitle, pr
             return <h2>Cap<span>stone</span></h2>
         } else if (pr.includes("Exercise") && sub.includes("Only HTML")) {
             return <h2>First &nbsp;<span>Lesson</span></h2>
-        } else if (pr.includes("'s")) {
+        } else if (pr.includes("'s") || pr.includes("Soon")) {
             return <h2>Expansion &nbsp;<span>Project</span></h2>
         }
         else {

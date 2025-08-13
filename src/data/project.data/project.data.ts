@@ -204,8 +204,22 @@ export const items: stateType = {
                     projectSource: "https://github.com/boithanh/todoapp/tree/dev"
                 }
             ]
+        },
+        {
+            tabProject: "Full Stack",
+            project: [
+                {
+                    projectImg: "/images/pexels-nicole-avagliano-1132392-2749481.jpg",
+                    projectTitle: "Comming Soon",
+                    projectSubTitle: "",
+                    projectContent: "Leveraging my expertise in Frontend (ReactJS / React Native) and Backend (Node.js, Express, MongoDB / MySQL), I develop end-to-end web and mobile solutions — from crafting engaging, user-friendly interfaces to architecting secure and scalable server-side systems. My projects span API design and integration, authentication and authorization workflows, custom CMS platforms with admin dashboards, and cloud deployment with CI/CD pipelines — ensuring high performance, reliability, and seamless scalability.",
+                }
+            ]
         }
 
+
     ],
+
+    
     currentTab: "HTML + CSS"
 }

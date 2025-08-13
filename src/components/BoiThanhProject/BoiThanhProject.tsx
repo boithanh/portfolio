@@ -52,8 +52,15 @@ const BoiThanhProject = (props: Props) => {
             return "contact"
         } else if (a === "ReactJS") {
             return "about"
-        } else {
+        }
+        else if (a === "React Native") {
+            return "mobile"
+        }
+          else if (a === "NextJs") {
             return "service"
+        }
+        else {
+            return `${Math.floor(Math.random()*999999999)+1}`;
         }
     }
     return (
