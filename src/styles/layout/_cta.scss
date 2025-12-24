@@ -1,112 +1,93 @@
 @use "./../helpers/variable" as *;
 
 .cta {
-    background: url("../../assets/images/pexels-photograph-1252508.jpg") center center / cover no-repeat;
+  background: url("../../assets/images/pexels-photograph-1252508.jpg") center
+    center / cover no-repeat;
+  width: 100%;
+  min-height: 500px;
+  height: 100%;
+  padding: 150px 50px 250px;
+  position: relative;
+  // overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
     width: 100%;
-    min-height: 500px;
     height: 100%;
-    padding: 190px 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+  }
+
+  .cta-diamond {
+    position: absolute;
+    content: "";
+    min-width: 456px;
+    min-height: 456px;
+    transition: 0.5s ease-in-out;
+    background: url("../../assets/images/noel_loichuc.jpg") center center /
+      cover no-repeat;
+    // background: linear-gradient(
+    //   to right,
+    //   #eea2a2,
+    //   #bbc1bf,
+    //   #57c6e1,
+    //   #b49fda,
+    //   #7ac5d8
+    // );
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    // opacity: 0.8;
+
+    @media screen and (max-width: 431px) {
+      min-width: 333px;
+      min-height: 333px;
+      top: calc(100% - (((100% - 333px) / 2) + 333px));
+      left: calc(100% - (((100% - 333px) / 2) + 333px));
+    }
+
+    @media screen and (max-width: 345px) {
+      min-width: 300px;
+      min-height: 300px;
+      top: calc(100% - (((100% - 300px) / 2) + 300px));
+      left: calc(100% - (((100% - 300px) / 2) + 300px));
+    }
+  }
+
+  .cta-content {
     position: relative;
-    // overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
-
-    &::before {
-
-        position: absolute;
-        content: '';
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
-    }
-
-    .cta-diamond {
-        position: absolute;
-        content: '';
-        top: calc(100% - (((100% - 456px) / 2) + 456px));
-        left: calc(100% - (((100% - 456px) / 2) + 456px));
-        min-width: 456px;
-        min-height: 456px;
-        clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
-        transition: 0.5s ease-in-out;
-        // background: rgba(255, 255, 255, 0.2);
-        background: linear-gradient(to right, #eea2a2, #bbc1bf, #57c6e1, #b49fda, #7ac5d8);
-        border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        opacity: 0.5;
-
-        &::before {
-            content: "";
-            width: 50%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: -100%;
-            // display: block;
-            background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
-            transform: skewX(-25deg);
-            transition: all .75s;
-        }
-
-        &:hover {
-            &::before {
-                left: 125% !important;
-            }
-
-            animation: loader 20s linear infinite;
-        }
-
-        @media screen and (max-width: 431px) {
-            min-width: 333px;
-            min-height: 333px;
-            top: calc(100% - (((100% - 333px) / 2) + 333px));
-            left: calc(100% - (((100% - 333px) / 2) + 333px));
-        }
-
-        @media screen and (max-width: 345px) {
-            min-width: 300px;
-            min-height: 300px;
-            top: calc(100% - (((100% - 300px) / 2) + 300px));
-            left: calc(100% - (((100% - 300px) / 2) + 300px));
-        }
-    }
-
-    .cta-content {
-        position: relative;
-        text-align: center;
-
-    }
-
+    text-align: center;
+    vertical-align: bottom;
+    min-height: 300px;
+  }
 }
 
 @keyframes loader {
-    0% {
-        rotate: 0deg;
-        opacity: 0.5;
-    }
+  0% {
+    rotate: 0deg;
+    opacity: 0.5;
+  }
 
-    25% {
-        rotate: 80deg;
-        opacity: 0.3;
-    }
+  25% {
+    rotate: 80deg;
+    opacity: 0.3;
+  }
 
-    50% {
-        rotate: 40deg;
-        opacity: 0.1;
+  50% {
+    rotate: 40deg;
+    opacity: 0.1;
+  }
 
-    }
-
-    100% {
-        rotate: 0deg;
-        opacity: 0.5;
-    }
+  100% {
+    rotate: 0deg;
+    opacity: 0.5;
+  }
 }

@@ -1,33 +1,33 @@
 @use "./../helpers/variable" as *;
 
 footer {
-    background: $background-color_8;
-
-    .footer_bottom {
-        p {
-            color: $color_7;
-        }
-
-        border-top: 1px solid rgb(168, 168, 168, 0.3);
+  // background: $background-color_8;
+  background: #802121;
+  .footer_bottom {
+    p {
+      color: $color_7;
     }
 
-    .footer_top {
-        a {
-            color: $color_7;
-            display: inline-block;
-            width: 42px;
-            height: 42px;
-            background: transparent;
-            border: 1px solid $border-color_4;
-            border-radius: 50%;
-            line-height: 40px;
-            margin-left: 10px;
-            transition: all 0.5s ease-in-out;
+    border-top: 1px solid rgb(168, 168, 168, 0.3);
+  }
 
-            &:hover {
-                color: $color_6;
-                border-color: $border-color_3;
-            }
-        }
+  .footer_top {
+    a {
+      color: $color_7;
+      display: inline-block;
+      width: 42px;
+      height: 42px;
+      background: transparent;
+      border: 1px solid $border-color_4;
+      border-radius: 50%;
+      line-height: 40px;
+      margin-left: 10px;
+      transition: all 0.5s ease-in-out;
+
+      &:hover {
+        color: $color_6;
+        border-color: $border-color_3;
+      }
     }
+  }
 }

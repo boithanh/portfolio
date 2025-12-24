@@ -2,74 +2,75 @@
 
 .cyber_carousel,
 .swiper-carousel {
+  .carousel-indicators,
+  .swiper-pagination-bullet {
+    height: 13px !important;
+    width: 13px !important;
+    border: none !important;
+    border-radius: 50% !important;
 
-    .carousel-indicators,
-    .swiper-pagination-bullet {
-        height: 13px !important;
-        width: 13px !important;
-        border: none !important;
-        border-radius: 50% !important;
-
-        .active {
-            background-color: $background-color_6 !important;
-        }
-
-        &.swiper-pagination-bullet-active {
-            background-color: $background-color_6 !important;
-        }
-
-        [data-bs-target] {
-            height: 13px !important;
-            width: 13px !important;
-            border: none !important;
-            border-radius: 50% !important;
-        }
-
-
+    .active {
+      background-color: $background-color_6 !important;
     }
 
-    .carousel-item {
-        .carousel_content {
-            z-index: 2;
-
-            img {
-                width: 150px;
-                height: 150px;
-                border-radius: 50%;
-            }
-
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-
-            h1 {
-                font-size: 3.5rem;
-                color: $color_4;
-                line-height: 4.063rem;
-            }
-
-            p {
-                font-size: 24px;
-                color: $color_4;
-                line-height: 36px;
-            }
-
-            @media screen and (max-width:768px) {
-                width: 100%;
-                padding: 10px;
-            }
-        }
-
-        .overlay {
-            background: linear-gradient(to right, #272b36, hsl(32deg 100% 1% / 10%));
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
-        }
+    &.swiper-pagination-bullet-active {
+      background-color: $background-color_6 !important;
     }
+
+    [data-bs-target] {
+      height: 13px !important;
+      width: 13px !important;
+      border: none !important;
+      border-radius: 50% !important;
+    }
+  }
+
+  .carousel-item {
+    .carousel_content {
+      z-index: 2;
+
+      img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+      }
+
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+
+      h1 {
+        font-size: 3.5rem;
+        color: $color_4;
+        line-height: 4.063rem;
+      }
+
+      p {
+        font-size: 24px;
+        color: $color_4;
+        line-height: 36px;
+      }
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        padding: 10px;
+      }
+    }
+
+    .overlay {
+      background: linear-gradient(
+        to right,
+        rgba(5, 15, 44, 0.6),
+        hsl(32deg 100% 1% / 10%)
+      );
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+  }
 }
