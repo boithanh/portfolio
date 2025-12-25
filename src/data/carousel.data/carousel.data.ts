@@ -1,7 +1,7 @@
 export const carouselData: Record<string, string>[] = [
   {
     background: "christmas2025/noel_3.jpg",
-    avatar: "avatar/01-3.jpg",
+    avatar: "avatar/06-3.jpg",
     title: "Hi, I'm Thạnh",
     content:
       "A budding Frontend Developer with a strong passion for minimal design and user experience. I’m always learning and growing.",
@@ -32,14 +32,16 @@ export const carouselData: Record<string, string>[] = [
   },
   {
     background: "christmas2025/noel_12.jpg",
-    avatar: "avatar/06-3.jpg",
-    title: "Our goals. Our mission",
-    content: "How we help other companies to grow",
+    avatar: "avatar/01-3.jpg",
+    title: "Meet the Creator",
+    content:
+      "A passionate developer dedicated to building elegant and functional digital experiences",
   },
   {
     background: "christmas2025/noel_19.jpg",
     avatar: "avatar/07-3.jpg",
-    title: "Our goals. Our mission",
-    content: "How we help other companies to grow",
+    title: "My Vision & Values",
+    content:
+      "Combining creativity with clean code to deliver impactful and user-centric solutions",
   },
 ];

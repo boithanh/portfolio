@@ -16,7 +16,7 @@ const CTA = (props: Props) => {
       </div>
       <div className="position-absolute bottom-0 py-5">
         {" "}
-        <Link href={"/contact"} className="btn btn-outline-light p-sm-3">
+        <Link href={"/contact"} className="btn btn-danger p-sm-3">
           Contact Now
         </Link>
       </div>

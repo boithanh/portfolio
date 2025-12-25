@@ -35,7 +35,6 @@ const SwiperCarousel = ({
         fadeEffect={{ crossFade: true }}
         loop={true} // Lặp vô hạn
         className="mySwiper"
-        autoplay={{ delay: 8000 }}
         speed={1500}
       >
         {carouselData.map((item, index) => {
@@ -47,18 +46,19 @@ const SwiperCarousel = ({
                 key={index}
               >
                 <div className="overlay" />
-                <Image
+                <img
                   src={`/images/${background}`}
                   className="d-block w-100 vh-100 object-fit-cover"
-                  sizes="99vw"
-                  alt={"err"}
-                  fill
-                  priority
                 />
                 <div className="carousel_content">
-                  <img
+                  <Image
                     src={`/images/${avatar}`}
                     className="object-fit-cover animate__animated animate__fadeInUp"
+                    width={150}
+                    height={150}
+                    quality={100}
+                    alt={"err"}
+                    priority
                   />
                   <h1 className="animate__animated animate__fadeInUp animate__delay-1s">
                     {title}
