@@ -8,6 +8,10 @@
   background-repeat: no-repeat;
   user-select: none;
 
+  @media screen and (max-width: 431px) {
+    background-position: top center;
+  }
+
   .enter-inner {
     padding-top: 100px;
 

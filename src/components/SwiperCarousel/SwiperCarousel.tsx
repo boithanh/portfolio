@@ -36,6 +36,7 @@ const SwiperCarousel = ({
         loop={true} // Lặp vô hạn
         className="mySwiper"
         speed={1500}
+        autoplay={{ delay: 8000 }}
       >
         {carouselData.map((item, index) => {
           let { background, avatar, content, title } = item;

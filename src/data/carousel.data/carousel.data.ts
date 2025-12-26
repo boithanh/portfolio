@@ -39,7 +39,7 @@ export const carouselData: Record<string, string>[] = [
   },
   {
     background: "christmas2025/noel_19.jpg",
-    avatar: "avatar/07-3.jpg",
+    avatar: "avatar/08-3.jpeg",
     title: "My Vision & Values",
     content:
       "Combining creativity with clean code to deliver impactful and user-centric solutions",
